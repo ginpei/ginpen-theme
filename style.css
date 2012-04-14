@@ -1,0 +1,410 @@
+/*
+Theme Name: Ginpen
+Theme URI: http://ginpen.com/
+Author: Takanashi Ginpei
+Author URI: http://ginpen.com/
+Description: For ginpen.com.
+Version: 2.0
+License: MIT License
+License URI: http://www.opensource.org/licenses/mit-license.php
+Tags: white, two-columns, flexible-width
+*/
+
+/*
+The MIT License
+
+Copyright (c) 2011 Takanashi Ginpei
+
+Permission is hereby granted, free of charge, to any person
+obtaining a copy of this software and associated documentation
+files (the "Software"), to deal in the Software without
+restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, sublicense, and/or
+sell copies of the Software, and to permit persons to whom the
+Software is furnished to do so, subject to the following
+conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES
+OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT
+HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+OTHER DEALINGS IN THE SOFTWARE.
+*/
+
+body {
+  margin-top: 30px;
+  min-width: 800px;
+}
+body,
+p {
+  font-size: 12px;
+}
+label {
+  display: inline;
+}
+
+.well {
+  padding: 4px;
+}
+.well .well {
+  background-color: #fcfcfc;
+}
+
+#global_header {
+  background-color: #006;
+  font-size: 12px;
+  height: 18px;
+  left: 0;
+  line-height: 1.5em;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+#global_header,
+#global_header #site_logo,
+#global_header a {
+  color: #fff;
+}
+#global_header #site_logo,
+#global_header a {
+  font-size: 1em;
+  line-height: 1.5em;
+}
+#global_header a {
+  text-decoration: none;
+}
+#global_header a:hover {
+  text-decoration: underline;
+}
+#global_header h1 {
+  display: none;
+  font-weight: normal;
+  margin: 0;
+}
+#global_header #site_logo {
+  float: left;
+  margin-left: 1em;
+}
+#global_header #global_header-info {
+  float: right;
+  padding-right: 1em;
+}
+#global_header #global_header-info .item {
+  background-color: #006;
+  display: inline-block;
+  margin-left: .5em;
+  position: relative;
+  vertical-align: top;
+  z-index: 1;
+}
+#global_header #global_header-info .item,
+#global_header #global_header-info .item .subject,
+#global_header #global_header-info .item .content {
+  background-color: #006;
+}
+#global_header #global_header-info .item .subject {
+  border-color: transparent;
+  border-style: none solid none;
+  border-width: 1px;
+  cursor: default;
+  padding: 0 .5em;
+}
+#global_header #global_header-info .item .content {
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 1px;
+  -moz-transition: opacity .2s linear;
+  -webkit-transition: opacity .2s linear;
+  transition: opacity .2s;
+  width: 0;
+}
+#global_header #global_header-info .item .content a {
+  display: block;
+  padding: .2em .5em;
+  white-space: nowrap;
+}
+#global_header #global_header-info .item.active .subject,
+#global_header #global_header-info .item:hover .subject {
+  border-color: #99c;
+  border-style: solid solid none;
+  border-width: 1px;
+  margin-bottom: -1px;
+  position: relative;
+  z-index: 1;
+}
+#global_header #global_header-info .item.active .content,
+#global_header #global_header-info .item:hover .content {
+  border-top: solid 1px #99c;
+  height: auto;
+  opacity: 1;
+  padding-top: .8em;
+  min-width: 100%;
+  width: auto;
+}
+#global_header #searchform {
+  margin: 0;
+  padding-left: 10px;
+  width: 280px;
+}
+#global_header #searchform label {
+  display: none;
+}
+#global_header #searchsubmit  {
+  position: relative;
+  top: -4px;
+}
+
+#top {
+  margin: 0 30px 30px;
+}
+a#site-title {
+  background-color: #036;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px rgba(0,0,0,.5);
+  color: #fff;
+  display: inline-block;
+  margin: 10px 0;
+  outline: dashed #99f 1px;
+  outline-offset: -5px;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+
+  -moz-transform: rotate(-5deg);
+  -webkit-transform: rotate(-5deg);
+  transform: rotate(-5deg);
+}
+a#site-title:hover {
+  outline-color: #ccf;
+
+  -moz-transform: rotate(-6deg);
+  -webkit-transform: rotate(-6deg);
+}
+#site-title h1 {
+  color: #fff;
+  font-family: Slackey;
+  font-size: 36px;
+  margin: 5px;
+}
+#site-title h2 {
+  font-size: 1em;
+  font-weight: normal;
+  line-height: 1.5em;
+}
+#about > * {
+  display: inline;
+  margin-right: 1em;
+}
+#about h1 {
+  font-size: 1em;
+  line-height: 1em;
+}
+#about p {
+  font-family: Georgia, "Bitstream Charter", serif;
+}
+#top .links-row {
+  margin: 0 5%;
+  width: auto;
+}
+#top .links-col {
+  margin: 0;
+}
+#top .links {
+  height: 100px;
+  margin: 0;
+  overflow: auto;
+}
+#top .links img {
+  margin: 4px;
+}
+#top .links a {
+  line-height: 20px;
+}
+#top .links ul {
+  list-style-type: none;
+  margin: 0;
+}
+#top .links-col ul li {
+  text-indent: -20px;
+  margin-left: 20px;
+}
+
+#main {
+  margin: 0 50px;
+}
+
+#main .nav:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+#main .nav .well {
+  width: 40%;
+}
+#main .post-neighbers a {
+  display: block;
+  padding: 5px 10px;
+}
+#main .nav .prev {
+  float: left;
+  text-align: left;
+}
+#main .nav .next {
+  float: right;
+  text-align: right;
+}
+
+#main article {
+  margin: 50px 0;
+}
+#main article::after {
+  background-image: url("img/guruguru.png");
+  content: '';
+  display: block;
+  height: 28px;
+  margin: 100px auto;
+  width: 33px;
+}
+#main article:last-of-type::after {
+  display: none;
+}
+#main article h1 {
+  border: solid 10px #000;
+  -moz-border-image: url("img/fukidashi-border.gif") 10;
+  border-image: url("img/fukidashi-border.gif") 10;
+  margin: 0 80px;
+  min-height: 2em;
+  padding: 10px;
+}
+#main article h1 a {
+  color: inherit;
+}
+#main article h1:before {
+  background-image: url("img/fukidashi-char.gif");
+  content: "";
+  display: block;
+  height: 78px;
+  float: left;
+  margin-left: -72px;
+  width: 60px;
+}
+#main .addthis_toolbox {
+  height: 30px;
+  margin: 10px 0 0 10px;
+}
+#main .article-status {
+  padding: 10px;
+  margin: 10px 10px;
+}
+#main .article-status > * {
+  display: inline;
+}
+#main .article-status > *::after {
+  content: "|";
+  color: #ccc;
+  margin: .5em;
+  text-shadow: 1px 1px 0 #fff;
+}
+#main .article-status > *:last-child::after {
+  display: none;
+}
+#main .article-body {
+  border: solid 10px #000;
+  -moz-border-image: url("img/fukidashi-border.gif") 10;
+  border-image: url("img/fukidashi-border.gif") 10;
+  border-width: 10px;
+  padding: 10px;
+  margin: 10px 0;
+}
+xxx #main .article-body::after {
+  background-image: url("img/fukidashi-char-bottom.gif");
+  background-repeat: no-repeat;
+  content: "";
+  color: #999;
+  display: block;
+  float: left;
+  height: 38px;
+  padding-left: 60px;
+  padding-top: 40px;
+  width: 0px;
+}
+#main .article-body h2 {
+  background-color: #fff;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0,0,0,.1);
+  font-size: 3em;
+  margin: 1.5em 0 1em;
+  padding: 10px;
+  text-shadow: 0 0 5px rgba(0,0,0,.3);
+}
+#main .article-body h3 {
+  background-image: url("img/guruguru.png");
+  background-repeat: no-repeat;
+  font-size: 2em;
+  margin: 1em 0 1em;
+  padding-left: 40px;
+}
+#main .article-body h2,
+#main .article-body h3,
+#main .article-body p {
+  font-family: Georgia, "Bitstream Charter", serif;
+}
+#main .article-body p {
+  font-size: 16px;
+  line-height: 2em;
+}
+
+#main .article-body .pagination a {
+  border-style: none;
+  float: none;
+  padding: 0;
+}
+#main .article-body .pagination .page {
+  border: 1px solid #ddd;
+  line-height: 34px;
+  padding: 0 14px;
+}
+
+#main article .comments-wrapper {
+  margin-left: 100px;
+}
+#main article .comments-wrapper ul {
+  list-style-type: none;
+}
+#main article .comment {
+  background-color: #fcfcfc;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+  margin: 4px;
+  padding: 4px;
+}
+#main article .comments-wrapper .children {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+#main article .comments-wrapper #respond {
+  border-top: double 3px #eee;
+  margin-top: 20px;
+  padding-top: 20px;
+}
+#main article .comments-wrapper #commentform textarea {
+  width: 90%;
+}
+
+#root-footer {
+  border-top: dashed 1px #ccc;
+  margin-top: 100px;
+  padding: 10px;
+}

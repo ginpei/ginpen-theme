@@ -1,0 +1,79 @@
+<div id="global_header" class="header">
+  <h1 id="site_logo"><a href="/">Ginpen.com</a></h1>
+  <div id="global_header-info">
+    <div class="item">
+      <div class="subject">jQueryプラグイン</div>
+      <ul class="content">
+        <?php wp_nav_menu('theme_location=jquery_plugins&items_wrap=%3$s&container=false'); ?>
+        <li><a href="/works#jquery_plugins">一覧 ...</a></li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="subject">Webアプリ</div>
+      <ul class="content">
+        <?php wp_nav_menu('theme_location=web_app&items_wrap=%3$s&container=false'); ?>
+        <li><a href="/works#web_app">一覧 ...</a></li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="subject">高梨ギンペイ</div>
+      <ul class="content">
+        <li><a href="/about">JavaScript書いてます</a></li>
+        <li><a href="/works#products">お仕事実績</a></li>
+        <li><a href="http://twitter.com/ginpei_jp">Twitter: @ginpei_jp</a></li>
+        <li><a href="<?php bloginfo('rss2_url'); ?>">RSS</a></li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="subject">検索</div>
+      <div class="content">
+        <?php get_search_form(); ?>
+        <script type="text/javascript">
+!function() {
+  document.getElementById('searchsubmit').className = 'btn';
+}();
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="top">
+  <div class="row-fluid">
+    <div class="span4">
+      <a id="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+        <hgroup>
+          <h1>Ginpen.com</h1>
+          <h2>横浜ペンギンWebを行く</h2>
+        </hgroup>
+      </a>
+    </div>
+  </div>
+  <nav class="row-fluid well links-row">
+    <div class="span6">
+      <div class="well links-col">
+        <ul class="recent-posts links">
+          <?php wp_get_archives(Array(
+            'type' => 'postbypost',
+            'limit' => 20,
+            'format' => 'custom',
+            'before' => '<li><img src="' . get_template_directory_uri() . '/img/favicon.ico" width="16" height="16" alt="" />',
+            'after' => '</li>',
+          )); ?>
+        </ul>
+      </div>
+    </div>
+    <div class="span6">
+      <div class="well links-col">
+        <div class="links">
+<script type="text/javascript">
+<!--
+    var blogroll_channel_id = 41777;
+// -->
+</script>
+<script type="text/javascript" charset="utf-8" src="http://blogroll.livedoor.net/js/blogroll.js"></script>
+        </div>
+      </div>
+    </div>
+  </nav>
+</div><!-- #top -->
