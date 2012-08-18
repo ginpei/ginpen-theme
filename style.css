@@ -45,6 +45,13 @@ body,
 p {
   font-size: 12px;
 }
+code {
+  color: inherit;
+  font-size: 90%;
+}
+strong {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
 label {
   display: inline;
 }
@@ -84,9 +91,15 @@ label {
   text-decoration: underline;
 }
 #global_header h1 {
-  display: none;
+  display: block;
   font-weight: normal;
   margin: 0;
+  opacity: 0;
+  -ms-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
 }
 #global_header #site_logo {
   float: left;
@@ -173,16 +186,31 @@ a#site-title {
   box-shadow: 3px 3px 5px rgba(0,0,0,.5);
   color: #fff;
   display: inline-block;
-  margin: 10px 0;
+  margin: 0;
   outline: dashed #99f 1px;
   outline-offset: -5px;
   padding: 5px;
+  position: fixed;
   text-align: center;
   text-decoration: none;
-
+  -ms-transform: rotate(-5deg);
+  -o-transform: rotate(-5deg);
   -moz-transform: rotate(-5deg);
   -webkit-transform: rotate(-5deg);
   transform: rotate(-5deg);
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+  z-index: 1;
+}
+a#site-title.animate {
+  -ms-transition: -ms-transform .5s, left .5s, top .5s, opacity .5s;
+  -o-transition: -o-transform .5s, left .5s, top .5s, opacity .5s;
+  -moz-transition: -moz-transform .5s, left .5s, top .5s, opacity .5s;
+  -webkit-transition: -webkit-transform .5s, left .5s, top .5s, opacity .5s;
+  transition: transform .5s, left .5s, top .5s, opacity .5s;
 }
 a#site-title:hover {
   outline-color: #ccf;
@@ -281,6 +309,7 @@ a#site-title:hover {
 #main article h1 {
   border: solid 10px #000;
   -moz-border-image: url("img/fukidashi-border.gif") 10;
+  -webkit-border-image: url("img/fukidashi-border.gif") 10;
   border-image: url("img/fukidashi-border.gif") 10;
   margin: 0 80px;
   min-height: 2em;
@@ -321,12 +350,13 @@ a#site-title:hover {
 #main .article-body {
   border: solid 10px #000;
   -moz-border-image: url("img/fukidashi-border.gif") 10;
+  -webkit-border-image: url("img/fukidashi-border.gif") 10;
   border-image: url("img/fukidashi-border.gif") 10;
   border-width: 10px;
   padding: 10px;
   margin: 10px 0;
 }
-xxx #main .article-body::after {
+.single #main .article-body::after {
   background-image: url("img/fukidashi-char-bottom.gif");
   background-repeat: no-repeat;
   content: "";
@@ -407,4 +437,22 @@ xxx #main .article-body::after {
   border-top: dashed 1px #ccc;
   margin-top: 100px;
   padding: 10px;
+}
+
+.figure {
+  margin: 15px;
+  text-align: center;
+}
+.figure a {
+  background-color: #eee;
+  display: inline-block;
+  padding: 10px;
+}
+.figcaption {
+  display: block;
+  margin-top: 10px;
+}
+
+.addthis_button_facebook_like iframe {
+  width: 130px !important;
 }

@@ -1,7 +1,7 @@
 <?php do_action( 'get_footer' ); ?>
 <?php wp_footer(); ?>
 <div id="footer-widgets">
-  <?php dynamic_sidebar( 'footer-1' ); ?>
+  <?php // dynamic_sidebar( 'footer-1' ); ?>
 </div>
 <address>
   <a href="http://ginpen.com">Ginpen.com</a>

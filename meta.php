@@ -11,7 +11,9 @@
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
-<?php wp_enqueue_script('jquery'); ?>
+<?php wp_deregister_script('jquery'); ?>
+<?php wp_enqueue_script('jquery', 'http://code.jquery.com/jquery-1.8.0.min.js'); ?>
+<?php wp_enqueue_script('jquery', 'http://code.jquery.com/jquery-1.8.0.js'); ?>
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) : ?>
   <?php wp_enqueue_script( 'comment-reply' ); ?>
 <?php endif; ?>

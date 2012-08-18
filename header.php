@@ -46,7 +46,11 @@
           <h1>Ginpen.com</h1>
           <h2>横浜ペンギンWebを行く</h2>
         </hgroup>
-      </a>
+      </a>&zwnj;
+    </div>
+    <div class="span4">&zwnj;</div>
+    <div class="span4">
+      <p class="well">コメント欄の表示が崩れてるのはそのうち直します。（そのうちね。）</p>
     </div>
   </div>
   <nav class="row-fluid well links-row">

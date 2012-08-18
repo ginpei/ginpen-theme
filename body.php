@@ -9,7 +9,7 @@
   </nav><!-- #nav-above -->
 </section>
 <aside id="main-sidebar">
-  <?php dynamic_sidebar( 'sidebar-1' ); ?>
+  <?php // dynamic_sidebar( 'sidebar-1' ); ?>
 </aside>
 <?php // ------------------------------------------------------------------
 /**
