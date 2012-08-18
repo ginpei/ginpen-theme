@@ -45,6 +45,19 @@ body,
 p {
   font-size: 12px;
 }
+table {
+  border: solid 1px #ccc;
+  margin: 0 0 9px 25px;
+}
+table th,
+table td {
+  border: solid 1px #ccc;
+  padding: 4px;
+}
+table th {
+  background-color: #ececec;
+  box-shadow: 1px 1px 2px #fff inset;
+}
 code {
   color: inherit;
   font-size: 90%;
