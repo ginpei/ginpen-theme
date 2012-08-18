@@ -33,4 +33,4 @@ function html_to_text($s) {
   }
   return $s;
 }
-add_filter('comment_text', 'html_to_text', 9);
+add_filter('comment_text', 'html_to_text', 8);  // priority 8 enables links, 9 does not
