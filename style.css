@@ -445,6 +445,9 @@ a#site-title:hover {
 #main article .comments-wrapper #commentform textarea {
   width: 90%;
 }
+#main article footer .addthis {
+	margin-left: 90px;
+}
 
 #root-footer {
   border-top: dashed 1px #ccc;
