@@ -92,4 +92,7 @@
         $item.removeClass('active');
       });
   }();
+
+	// recent posts
+	$('.recent-posts a').gpHatebuCounter();
 }(jQuery);

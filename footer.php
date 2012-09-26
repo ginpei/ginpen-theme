@@ -11,6 +11,7 @@
   <a href="http://twitter.com/ginpei_jp">@ginpei_jp</a>
 </address>
 <div id="site-generator"><a href="<?php echo esc_url( 'http://wordpress.org/' ); ?>" rel="generator">Proudly powered by WordPress</a></div>
+<script src="http://ginpen.com/lab/jQuery.gpHatebuCounter/jquery.gphatebucounter-1.0.min.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/global.js" type="text/javascript"></script>
 <?php if (!is_user_logged_in()) : ?>
 <!-- Google Analytics -->
