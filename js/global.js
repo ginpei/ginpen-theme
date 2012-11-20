@@ -25,7 +25,7 @@
     });
 
     $(function() {
-      // $title.addClass('animate');
+      $title.addClass('animate');
     });
 
     var nBody = document.body;
