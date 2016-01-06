@@ -93,6 +93,6 @@
       });
   }();
 
-	// recent posts
-	$('.recent-posts a').gpHatebuCounter();
+  // recent posts
+  $('.recent-posts a').gpHatebuCounter();
 }(jQuery);

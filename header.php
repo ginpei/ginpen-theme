@@ -50,7 +50,7 @@
     </div>
     <div class="span4">&zwnj;</div>
     <div class="span4">
-      <p class="well">コメント欄の表示が崩れてるのはそのうち直します。（そのうちね。）</p>
+      <p class="well" style="min-height:40px; visibility:hidden;"></p>
     </div>
   </div>
   <nav class="row-fluid well links-row">
@@ -80,4 +80,5 @@
       </div>
     </div>
   </nav>
+  <p class="for-mobile">※スマホ対応はしてません。</p>
 </div><!-- #top -->

@@ -36,14 +36,17 @@ WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 OTHER DEALINGS IN THE SOFTWARE.
 */
-
 body {
   margin-top: 30px;
   min-width: 800px;
 }
 body,
 p {
+  font-family:"游ゴシック","Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
+}
+input, button, select, textarea {
+  font-family: inherit;
 }
 table {
   border: solid 1px #ccc;
@@ -281,7 +284,8 @@ a#site-title:hover {
 }
 
 #main {
-  margin: 0 50px;
+  margin: 0 auto;
+  max-width: 800px;
 }
 
 #main .nav:after {
@@ -366,7 +370,7 @@ a#site-title:hover {
   -webkit-border-image: url("img/fukidashi-border.gif") 10;
   border-image: url("img/fukidashi-border.gif") 10;
   border-width: 10px;
-  padding: 10px;
+  padding: 10px 20px;
   margin: 10px 0;
 }
 .single #main .article-body::after {
@@ -386,6 +390,7 @@ a#site-title:hover {
   border: solid 1px #ccc;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0,0,0,.1);
+  clear: both;
   font-size: 3em;
   margin: 1.5em 0 1em;
   padding: 10px;
@@ -406,6 +411,22 @@ a#site-title:hover {
 #main .article-body p {
   font-size: 16px;
   line-height: 2em;
+}
+
+#main .article-body .article-translate-src {
+  opacity: 0.3;
+  margin-right: 10%;
+  transition: opacity 0.5s;
+}
+#main .article-body .article-translate-src,
+#main .article-body .article-translate-src * {
+  font-size: 10px;
+}
+#main .article-body .article-translate-src:hover {
+  opacity: 1;
+}
+#main .article-body .article-translate-dest {
+  margin-left: 10%;
 }
 
 #main .article-body .pagination a {
@@ -446,7 +467,19 @@ a#site-title:hover {
   width: 90%;
 }
 #main article footer .addthis {
-	margin-left: 90px;
+  margin-left: 90px;
+}
+
+#root-ads {
+  border: solid 1px #eee;
+  display: block;
+  margin: 10px;
+  text-align: center;
+}
+#root-ads::before {
+  color: #666;
+  content: "Ads";
+  display: block;
 }
 
 #root-footer {
@@ -469,6 +502,112 @@ a#site-title:hover {
   margin-top: 10px;
 }
 
+.alignright {
+  float: right;
+}
 .addthis_button_facebook_like iframe {
   width: 130px !important;
+}
+
+.jsfiddle {
+  border: solid 1px #ccc;
+  border-radius: 4px;
+  box-shadow: 1px 1px 4px rgba(0,0,0,.1);
+  margin: 0 auto 9px;
+  overflow: hidden;
+  width: 90%;
+}
+figure {
+  background-color: #f9f9f9;
+  padding: 1em;
+  text-align: center;
+}
+img.bordered {
+  border-radius: 4px;
+  box-shadow:
+    -1px -1px 0 #ccc,
+     1px -1px 0 #ccc,
+     1px  1px 0 #ccc,
+    -1px  1px 0 #ccc,
+    0 0 8px #ccc;
+}
+img.bordered.alignright {
+  margin: 0 0 8px 8px;
+}
+figcaption {
+  margin: .5em;
+}
+
+/*
+body {
+  -ms-animation-duration: .1s;
+  -ms-animation-name: viberate;
+  -ms-animation-iteration-count: 50;
+  -moz-animation-duration: .1s;
+  -moz-animation-name: viberate;
+  -moz-animation-iteration-count: 50;
+  -o-animation-duration: .1s;
+  -o-animation-name: viberate;
+  -o-animation-iteration-count: 50;
+  -webkit-animation-duration: .1s;
+  -webkit-animation-name: viberate;
+  -webkit-animation-iteration-count: 50;
+  animation-duration: .1s;
+  animation-name: viberate;
+  animation-iteration-count: 50;
+}
+@-ms-keyframes viberate {
+  0% { -webkit-transform: translate(1px, 1px); }
+  25% { -webkit-transform: translate(-1px, 1px); }
+  50% { -webkit-transform: translate(-1px, -1px); }
+  100% { -webkit-transform: translate(1px, -1px); }
+}
+@-moz-keyframes viberate {
+  0% { -webkit-transform: translate(1px, 1px); }
+  25% { -webkit-transform: translate(-1px, 1px); }
+  50% { -webkit-transform: translate(-1px, -1px); }
+  100% { -webkit-transform: translate(1px, -1px); }
+}
+@-o-keyframes viberate {
+  0% { -webkit-transform: translate(1px, 1px); }
+  25% { -webkit-transform: translate(-1px, 1px); }
+  50% { -webkit-transform: translate(-1px, -1px); }
+  100% { -webkit-transform: translate(1px, -1px); }
+}
+@-webkit-keyframes viberate {
+  0% { -webkit-transform: translate(1px, 1px); }
+  25% { -webkit-transform: translate(-1px, 1px); }
+  50% { -webkit-transform: translate(-1px, -1px); }
+  100% { -webkit-transform: translate(1px, -1px); }
+}
+@keyframes viberate {
+  0% { -webkit-transform: translate(1px, 1px); }
+  25% { -webkit-transform: translate(-1px, 1px); }
+  50% { -webkit-transform: translate(-1px, -1px); }
+  100% { -webkit-transform: translate(1px, -1px); }
+}
+*/
+
+.for-mobile {
+  display: none;
+}
+@media screen and (max-width:640px){
+  body {
+    min-width:0
+  }
+  .for-mobile {
+    display: block;
+  }
+  #global_header {
+    position: absolute;
+  }
+  #main {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #main article h1 {
+    font-size: 1.5em;
+    margin-left: 55px;
+    margin-right: 0;
+  }
 }

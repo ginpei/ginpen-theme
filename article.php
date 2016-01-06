@@ -34,7 +34,7 @@
   </div>
   <footer>
     <?php if ( is_single() ) : ?>
-			<div class="addthis">
+      <div class="addthis">
 <!-- AddThis Button BEGIN -->
 <div class="addthis_toolbox addthis_default_style "
   addthis:url="<?php the_permalink(); ?>"
@@ -46,7 +46,8 @@
 </div>
 <?php wp_enqueue_script( 'addthis', 'http://s7.addthis.com/js/250/addthis_widget.js#pubid=ginpei' ); ?>
 <!-- AddThis Button END -->
-			</div>
+      </div>
+<?php /* ?>
       <div class="comments-wrapper well">
         <?php comments_template( '', true ); ?>
         <script type="text/javascript">
@@ -55,14 +56,17 @@
 }();
         </script>
       </div>
+<?php */ ?>
       <nav class="post-neighbers nav">
         <?php previous_post_link('<span class="prev well">%link</span>', '&larr; %title'); ?>
         <?php next_post_link('<span class="next well">%link</span>', '%title &rarr;'); ?>
       </nav>
+<?php /* ?>
     <?php else : ?>
       <div class="post-comments">
         <?php comments_popup_link(); ?>
       </div>
+<?php */ ?>
     <?php endif; ?>
   </footer>
 </article>

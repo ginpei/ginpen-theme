@@ -34,3 +34,32 @@ function html_to_text($s) {
   return $s;
 }
 add_filter('comment_text', 'html_to_text', 8);  // priority 8 enables links, 9 does not
+
+// ------------------------------------------------------------------------
+
+function shortcode_translate_src($attr, $content = '') {
+  $withTag = (substr(trim($content),0,1) === '<' && substr(trim($content),-1) === '>');
+  $html = '<blockquote class="article-translate-src">';
+  if (!$withTag) { $html .= '<p>'; }
+  $html .= $content;
+  if (!$withTag) { $html .= '</p>'; }
+  $html .= '</blockquote>';
+  return $html;
+}
+add_shortcode('translate-src', 'shortcode_translate_src');
+
+function shortcode_translate_dest($attr, $content = '') {
+  $withTag = (substr(trim($content),0,1) === '<' && substr(trim($content),-1) === '>');
+  $html = '<div class="article-translate-dest">';
+  if (!$withTag) { $html .= '<p>'; }
+  $html .= $content;
+  if (!$withTag) { $html .= '</p>'; }
+  $html .= '</div>';
+  return $html;
+}
+add_shortcode('translate-dest', 'shortcode_translate_dest');
+
+function login_tiananmen() {
+    echo '<a href="http://en.wikipedia.org/wiki/Tiananmen_Square_protests">Tiananmen Square protests (天安門事件/天安门事件)</a>';
+}
+add_action('login_head', 'login_tiananmen');
