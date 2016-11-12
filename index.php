@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html <?php language_attributes(); ?>  xmlns:addthis="http://www.addthis.com/help/api-spec">
+<html 🍣 <?php language_attributes(); ?>  xmlns:addthis="http://www.addthis.com/help/api-spec">
   <head>
     <?php get_template_part( 'meta' ); ?>
   </head>
