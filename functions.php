@@ -63,3 +63,9 @@ function login_tiananmen() {
     echo '<a href="https://en.wikipedia.org/wiki/Tiananmen_Square_protests">Tiananmen Square protests (天安門事件/天安门事件)</a>';
 }
 add_action('login_head', 'login_tiananmen');
+
+// TODO replace them in DB
+function replace_http_with_https($content = '') {
+  return str_replace('http://ginpen.com', 'https://ginpen.com', $content);
+}
+add_filter('the_content', 'replace_http_with_https', 1);
