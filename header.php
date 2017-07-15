@@ -1,6 +1,8 @@
 <div id="global_header" class="header">
   <h1 id="site_logo"><a href="/">Ginpen.com</a></h1>
   <div id="global_header-info">
+    <?php
+    /*
     <div class="item">
       <div class="subject">jQueryプラグイン</div>
       <ul class="content">
@@ -15,6 +17,8 @@
         <li><a href="/works#web_app">一覧 ...</a></li>
       </ul>
     </div>
+    */
+    ?>
     <div class="item">
       <div class="subject">高梨ギンペイ</div>
       <ul class="content">
