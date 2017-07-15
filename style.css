@@ -538,6 +538,12 @@ figcaption {
   margin: .5em;
 }
 
+/* fix confliction of highlighter vs bootstrap */
+.syntaxhighlighter .container::before,
+.syntaxhighlighter .container::after {
+  display: none;
+}
+
 /*
 body {
   -ms-animation-duration: .1s;
