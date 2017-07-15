@@ -24,7 +24,7 @@
       <ul class="content">
         <li><a href="/about">JavaScript書いてます</a></li>
         <li><a href="/works#products">お仕事実績</a></li>
-        <li><a href="http://twitter.com/ginpei_jp">Twitter: @ginpei_jp</a></li>
+        <li><a href="https://twitter.com/ginpei_jp">Twitter: @ginpei_jp</a></li>
         <li><a href="<?php bloginfo('rss2_url'); ?>">RSS</a></li>
       </ul>
     </div>

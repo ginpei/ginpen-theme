@@ -4,14 +4,14 @@
   <?php // dynamic_sidebar( 'footer-1' ); ?>
 </div>
 <address>
-  <a href="http://ginpen.com">Ginpen.com</a>
+  <a href="https://ginpen.com">Ginpen.com</a>
   <br />
   by <strong>Takanashi Ginpei</strong>
   <br />
-  <a href="http://twitter.com/ginpei_jp">@ginpei_jp</a>
+  <a href="https://twitter.com/ginpei_jp">@ginpei_jp</a>
 </address>
-<div id="site-generator"><a href="<?php echo esc_url( 'http://wordpress.org/' ); ?>" rel="generator">Proudly powered by WordPress</a></div>
-<script src="http://ginpen.com/lab/jQuery.gpHatebuCounter/jquery.gphatebucounter-1.0.min.js" type="text/javascript"></script>
+<div id="site-generator"><a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>" rel="generator">Proudly powered by WordPress</a></div>
+<script src="https://ginpen.com/lab/jQuery.gpHatebuCounter/jquery.gphatebucounter-1.0.min.js" type="text/javascript"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/global.js" type="text/javascript"></script>
 <?php if (!is_user_logged_in()) : ?>
 <!-- Google Analytics -->

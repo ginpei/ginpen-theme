@@ -60,6 +60,6 @@ function shortcode_translate_dest($attr, $content = '') {
 add_shortcode('translate-dest', 'shortcode_translate_dest');
 
 function login_tiananmen() {
-    echo '<a href="http://en.wikipedia.org/wiki/Tiananmen_Square_protests">Tiananmen Square protests (天安門事件/天安门事件)</a>';
+    echo '<a href="https://en.wikipedia.org/wiki/Tiananmen_Square_protests">Tiananmen Square protests (天安門事件/天安门事件)</a>';
 }
 add_action('login_head', 'login_tiananmen');
