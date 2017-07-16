@@ -28,6 +28,13 @@
       <?php edit_post_link(); ?>
     </div>
   </header>
+  <?php if (!is_ssl()) { ?>
+    <p class="notice-sslLink">
+      ※この記事にはHTTPS版のURLがあります。よろしければそちらをご利用ください。
+      <br />
+      <a href="<?php the_permalink(); ?>"><?php the_permalink(); ?></a>
+    </p>
+  <?php } ?>
   <div class="article-body">
     <?php the_content(); ?>
     <?php if ( is_single() ) wp_link_pages('before=<nav class="pagination">ページ: &after=</nav>&pagelink=<span class="page">%</span>'); ?>
