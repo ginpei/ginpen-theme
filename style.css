@@ -274,7 +274,7 @@ a#site-title:hover {
 #top .links a {
   line-height: 20px;
 }
-#top .links ul {
+#top ul.links {
   list-style-type: none;
   margin: 0;
 }
