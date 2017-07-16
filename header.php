@@ -48,7 +48,7 @@
       <a id="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
         <hgroup>
           <h1>Ginpen.com</h1>
-          <h2>JavaScript vs JapaneseSushi</h2>
+          <h2>Powered by JavaScript and JapaneseSushi</h2>
         </hgroup>
       </a>&zwnj;
     </div>
