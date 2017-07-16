@@ -61,6 +61,9 @@
     <div class="span6">
       <div class="well links-col">
         <ul class="links">
+	  <?php if (!is_ssl()) { ?>
+	    <li><img src="<?= get_template_directory_uri() ?>/img/favicon.ico" width="16" height="16" alt="" />ざっくりHTTP対応しました。（自動リダイレクトしません。）</li>
+	  <?php } ?>
 	  <li><img src="<?= get_template_directory_uri() ?>/img/guruguru.png" width="16" height="16" alt="" /><a href="http://ginpei.info">About Ginpei</a></li>
 	  <li><img src="https://abs.twimg.com/favicons/favicon.ico" width="16" height="16" alt="" /><a href="http://twitter.com/ginpei_jp">Twitter</a></li>
 	  <li><img src="https://assets-cdn.github.com/favicon.ico" width="16" height="16" alt="" /><a href="https://github.com/ginpei/">GitHub</a></li>
