@@ -534,6 +534,9 @@ img.bordered {
 img.bordered.alignright {
   margin: 0 0 8px 8px;
 }
+figure img {
+  max-width: 100%;
+}
 figcaption {
   margin: .5em;
 }
