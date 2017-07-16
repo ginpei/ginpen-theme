@@ -60,6 +60,15 @@
   <nav class="row-fluid well links-row">
     <div class="span6">
       <div class="well links-col">
+        <ul class="links">
+	  <li><img src="http://ginpei.info/favicon.ico" width="16" height="16" alt="" /><a href="http://ginpei.info">About Ginpei</a></li>
+	  <li><img src="https://abs.twimg.com/favicons/favicon.ico" width="16" height="16" alt="" /><a href="http://twitter.com/ginpei_jp">Twitter</a></li>
+	  <li><img src="https://assets-cdn.github.com/favicon.ico" width="16" height="16" alt="" /><a href="https://github.com/ginpei/">GitHub</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="span6">
+      <div class="well links-col">
         <ul class="recent-posts links">
           <?php wp_get_archives(Array(
             'type' => 'postbypost',
@@ -69,18 +78,6 @@
             'after' => '</li>',
           )); ?>
         </ul>
-      </div>
-    </div>
-    <div class="span6">
-      <div class="well links-col">
-        <div class="links">
-<script type="text/javascript">
-<!--
-    var blogroll_channel_id = 41777;
-// -->
-</script>
-<script type="text/javascript" charset="utf-8" src="http://blogroll.livedoor.net/js/blogroll.js"></script>
-        </div>
       </div>
     </div>
   </nav>
