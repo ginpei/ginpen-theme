@@ -1,4 +1,6 @@
 <?php
+define('FORCE_SSL_ADMIN', true);
+
 /*
  * Register sidebars for basic layout.
  */
