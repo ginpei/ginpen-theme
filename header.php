@@ -62,11 +62,11 @@
       <div class="well links-col">
         <ul class="links">
 	  <?php if (!is_ssl()) { ?>
-	    <li><img src="<?= get_template_directory_uri() ?>/img/favicon.ico" width="16" height="16" alt="" />ざっくりHTTP対応しました。（自動リダイレクトしません。）</li>
+	    <li><a href="https://ginpen.com/"><img src="<?= get_template_directory_uri() ?>/img/favicon.ico" width="16" height="16" alt="" />ざっくりHTTPS対応しました。（自動リダイレクトしません。）</a></li>
 	  <?php } ?>
-	  <li><img src="<?= get_template_directory_uri() ?>/img/guruguru.png" width="16" height="16" alt="" /><a href="https://ginpei.info">About Ginpei</a></li>
-	  <li><img src="https://abs.twimg.com/favicons/favicon.ico" width="16" height="16" alt="" /><a href="http://twitter.com/ginpei_jp">Twitter</a></li>
-	  <li><img src="https://assets-cdn.github.com/favicon.ico" width="16" height="16" alt="" /><a href="https://github.com/ginpei/">GitHub</a></li>
+	  <li><a href="https://ginpei.info"><img src="<?= get_template_directory_uri() ?>/img/guruguru.png" width="16" height="16" alt="" />About Ginpei</a></li>
+	  <li><a href="http://twitter.com/ginpei_jp"><img src="https://abs.twimg.com/favicons/favicon.ico" width="16" height="16" alt="" />Twitter</a></li>
+	  <li><a href="https://github.com/ginpei/"><img src="https://assets-cdn.github.com/favicon.ico" width="16" height="16" alt="" />GitHub</a></li>
         </ul>
       </div>
     </div>
