@@ -523,6 +523,10 @@ figure {
   padding: 1em;
   text-align: center;
 }
+figure.aside-right {
+  float: right;
+  margin: 0 0 1em 1em;
+}
 img.bordered {
   border-radius: 4px;
   box-shadow:
@@ -537,6 +541,9 @@ img.bordered.alignright {
 }
 figure img {
   max-width: 100%;
+}
+figure.aside-right img {
+  max-width: 300px;
 }
 figcaption {
   margin: .5em;
