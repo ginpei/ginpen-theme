@@ -471,18 +471,6 @@ a#site-title:hover {
   margin-left: 90px;
 }
 
-#root-ads {
-  border: solid 1px #eee;
-  display: block;
-  margin: 10px;
-  text-align: center;
-}
-#root-ads::before {
-  color: #666;
-  content: "Ads";
-  display: block;
-}
-
 #root-footer {
   border-top: dashed 1px #ccc;
   margin-top: 100px;

@@ -13,9 +13,6 @@
     <div id="root-body">
       <?php get_template_part( 'body' ); ?>
     </div>
-    <aside id="root-ads">
-      <?php get_template_part( 'ads' ); ?>
-    </aside>
     <footer id="root-footer">
       <?php get_template_part( 'footer' ); ?>
     </footer>
