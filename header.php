@@ -65,8 +65,8 @@
 	    <li><a href="https://ginpen.com/"><img src="<?= get_template_directory_uri() ?>/img/favicon.ico" width="16" height="16" alt="" />ざっくりHTTPS対応しました。（自動リダイレクトしません。）</a></li>
 	  <?php } ?>
 	  <li><a href="https://ginpei.info"><img src="<?= get_template_directory_uri() ?>/img/guruguru.png" width="16" height="16" alt="" />About Ginpei</a></li>
-	  <li><a href="http://twitter.com/ginpei_jp"><img src="https://abs.twimg.com/favicons/favicon.ico" width="16" height="16" alt="" />Twitter</a></li>
-	  <li><a href="https://github.com/ginpei/"><img src="https://assets-cdn.github.com/favicon.ico" width="16" height="16" alt="" />GitHub</a></li>
+	  <li><a href="http://twitter.com/ginpei_jp"><img src="https://ginpen.com/wp-content/themes/ginpen-theme/img/twitter.ico" width="16" height="16" alt="" />Twitter</a></li>
+	  <li><a href="https://github.com/ginpei/"><img src="https://ginpen.com/wp-content/themes/ginpen-theme/img/github.ico" width="16" height="16" alt="" />GitHub</a></li>
         </ul>
       </div>
     </div>
