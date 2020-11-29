@@ -34,26 +34,10 @@
       <div class="addthis">
         <?php get_template_part( 'components/addthis' ); ?>
       </div>
-<?php /* ?>
-      <div class="comments-wrapper well">
-        <?php comments_template( '', true ); ?>
-        <script type="text/javascript">
-!function() {
-  document.getElementById('submit').className = 'btn';
-}();
-        </script>
-      </div>
-<?php */ ?>
       <nav class="post-neighbers nav">
         <?php previous_post_link('<span class="prev well">%link</span>', '&larr; %title'); ?>
         <?php next_post_link('<span class="next well">%link</span>', '%title &rarr;'); ?>
       </nav>
-<?php /* ?>
-    <?php else : ?>
-      <div class="post-comments">
-        <?php comments_popup_link(); ?>
-      </div>
-<?php */ ?>
     <?php endif; ?>
   </footer>
 </article>
