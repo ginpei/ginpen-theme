@@ -52,7 +52,7 @@
       }
 
       function setCss(rate) {
-        var left = orgLeft * rate;
+        var left = orgLeft + 16 * (1 - rate);
         var top = orgTop * rate;
         var opacity = (rate > 0 ? (rate > 0.7 ? rate : 0.7) : 0);
         var deg = (rate < 1 ? 0 : orgDeg);
