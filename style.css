@@ -80,6 +80,13 @@ label {
   background-color: #fcfcfc;
 }
 
+.ui-container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 800px;
+}
+
 #global_header {
   background-color: #006;
   font-size: 12px;
@@ -195,7 +202,6 @@ label {
 }
 
 #top {
-  margin: 0 30px 30px;
 }
 a#site-title {
   background-color: #036;
@@ -257,10 +263,6 @@ a#site-title:hover {
 #about p {
   font-family: Georgia, "Bitstream Charter", serif;
 }
-#top .links-row {
-  margin: 0 5%;
-  width: auto;
-}
 #top .links-col {
   margin: 0;
 }
@@ -285,8 +287,6 @@ a#site-title:hover {
 }
 
 #main {
-  margin: 0 auto;
-  max-width: 800px;
 }
 
 #main .nav:after {

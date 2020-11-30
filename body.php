@@ -1,4 +1,4 @@
-<section id="main">
+<section id="main" class="ui-container">
   <?php _body_echo_type_title(); ?>
   <?php while ( have_posts() ) : the_post(); ?>
     <?php get_template_part( 'article', get_post_format() ); ?>

@@ -1,48 +1,50 @@
 <div id="global_header" class="header">
-  <h1 id="site_logo"><a href="/">Ginpen.com</a></h1>
-  <div id="global_header-info">
-    <?php
-    /*
-    <div class="item">
-      <div class="subject">jQueryプラグイン</div>
-      <ul class="content">
-        <?php wp_nav_menu('theme_location=jquery_plugins&items_wrap=%3$s&container=false'); ?>
-        <li><a href="/works#jquery_plugins">一覧 ...</a></li>
-      </ul>
-    </div>
-    <div class="item">
-      <div class="subject">Webアプリ</div>
-      <ul class="content">
-        <?php wp_nav_menu('theme_location=web_app&items_wrap=%3$s&container=false'); ?>
-        <li><a href="/works#web_app">一覧 ...</a></li>
-      </ul>
-    </div>
-    */
-    ?>
-    <div class="item">
-      <div class="subject">高梨ギンペイ</div>
-      <ul class="content">
-        <li><a href="/about">JavaScript書いてます</a></li>
-        <li><a href="/works#products">お仕事実績</a></li>
-        <li><a href="https://twitter.com/ginpei_jp">Twitter: @ginpei_jp</a></li>
-        <li><a href="<?php bloginfo('rss2_url'); ?>">RSS</a></li>
-      </ul>
-    </div>
-    <div class="item">
-      <div class="subject">検索</div>
-      <div class="content">
-        <?php get_search_form(); ?>
-        <script type="text/javascript">
-!function() {
-  document.getElementById('searchsubmit').className = 'btn';
-}();
-        </script>
+  <div class="ui-container">
+    <h1 id="site_logo"><a href="/">Ginpen.com</a></h1>
+    <div id="global_header-info">
+      <?php
+      /*
+      <div class="item">
+        <div class="subject">jQueryプラグイン</div>
+        <ul class="content">
+          <?php wp_nav_menu('theme_location=jquery_plugins&items_wrap=%3$s&container=false'); ?>
+          <li><a href="/works#jquery_plugins">一覧 ...</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <div class="subject">Webアプリ</div>
+        <ul class="content">
+          <?php wp_nav_menu('theme_location=web_app&items_wrap=%3$s&container=false'); ?>
+          <li><a href="/works#web_app">一覧 ...</a></li>
+        </ul>
+      </div>
+      */
+      ?>
+      <div class="item">
+        <div class="subject">高梨ギンペイ</div>
+        <ul class="content">
+          <li><a href="/about">JavaScript書いてます</a></li>
+          <li><a href="/works#products">お仕事実績</a></li>
+          <li><a href="https://twitter.com/ginpei_jp">Twitter: @ginpei_jp</a></li>
+          <li><a href="<?php bloginfo('rss2_url'); ?>">RSS</a></li>
+        </ul>
+      </div>
+      <div class="item">
+        <div class="subject">検索</div>
+        <div class="content">
+          <?php get_search_form(); ?>
+          <script type="text/javascript">
+  !function() {
+    document.getElementById('searchsubmit').className = 'btn';
+  }();
+          </script>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div id="top">
+<div id="top" class="ui-container">
   <div class="row-fluid">
     <div class="span4">
       <a id="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
