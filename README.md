@@ -49,38 +49,13 @@ Enter password:
 
 ## 本番のバックアップをローカル環境へ反映
 
-以下の手順で行う。
+All-in-One WP Migration を用いる。
 
-1. 本番環境のバックアップを取得
-2. ローカル開発用に変換
-3. ローカル環境へ適用
+- [All-in-One WP Migration – WordPress プラグイン | WordPress.org 日本語](https://ja.wordpress.org/plugins/all-in-one-wp-migration/)
 
-バックアップは UpdraftPlus を利用する。
+たぶん `.htaccess` に以下を追加する必要がある。（しないとマイグレーションファイルのアップロード時、ファイルサイズ制限初期値 2MB のためエラーになる。また 512MB を超過する場合は有料版が必要？）
 
-- [UpdraftPlus WordPress Backup Plugin – WordPress プラグイン | WordPress.org 日本語](https://ja.wordpress.org/plugins/updraftplus/)
-
-### 本番環境のバックアップを取得
-
-1. 本番 WordPress サイトへ admin でログイン
-2. 左メニュー 設定 > UpdraftPlus Backup
-3. 「今すぐバックアップ」
-4. 既存のバックアップ一覧からダウンロード
-   - データベース
-   - プラグイン
-   - アップロード
-   - その他
-
-### ローカル開発用に変換
-
- 1. `gunzip backup_0000-00-00-0000_Ginpencom_xxxxxxxxxxxx-db.gz`
- 2. テキストファイル `backup_0000-00-00-0000_Ginpencom_xxxxxxxxxxxx-db` を開く
- 3. `https://ginpen.com` を `http://localhost:8000` へ置換
- 4. `gzip backup_0000-00-00-0000_Ginpencom_xxxxxxxxxxxx-db`
-
-### ローカル環境へ適用
-
-1. ローカル環境起動 `docker-compose up`
-2. UpdraftPlus をインストール
-3. バックアップファイルをアップロード
-4. 既存のバックアップ の一覧で「復元」
-5. 上の方「古いディレクトリを削除」
+```
+php_value upload_max_filesize 512M
+php_value post_max_size 512M
+```
