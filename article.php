@@ -35,8 +35,8 @@
         <?php get_template_part( 'components/addthis' ); ?>
       </div>
       <nav class="post-neighbers nav">
-        <?php previous_post_link('<span class="prev well">%link</span>', '&larr; %title'); ?>
-        <?php next_post_link('<span class="next well">%link</span>', '%title &rarr;'); ?>
+        <?php next_post_link('<span class="next well">%link</span>', '&larr; %title'); ?>
+        <?php previous_post_link('<span class="prev well">%link</span>', '%title &rarr;'); ?>
       </nav>
     <?php endif; ?>
   </footer>

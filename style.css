@@ -295,17 +295,21 @@ a#site-title:hover {
   display: block;
 }
 #main .nav .well {
-  width: 40%;
+  width: 45%;
+}
+#main .post-neighbers {
+  clear: both;
+  margin-top: 10px;
 }
 #main .post-neighbers a {
   display: block;
   padding: 5px 10px;
 }
-#main .nav .prev {
+#main .nav .next {
   float: left;
   text-align: left;
 }
-#main .nav .next {
+#main .nav .prev {
   float: right;
   text-align: right;
 }
