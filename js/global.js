@@ -11,7 +11,7 @@
 
     var visible = true;
     var offset = $title.offset();
-    var orgTop = offset.top;
+    var orgTop = offset.top - document.scrollingElement.scrollTop;
     var orgLeft = offset.left;
     var orgDeg = -5;
 
