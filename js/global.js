@@ -97,8 +97,24 @@
   /** @type {NodeListOf<HTMLAnchorElement>} */
   (document.querySelectorAll('[data-js="recentPostList"] a')).forEach((elLink) => {
     const url = elLink.href;
-    const elImg = createHatebuCounterElement(url);
-    elLink.parentElement.appendChild(elImg);
+    const elCount = createHatebuCounterElement(url);
+    elCount.onload = () => {
+      // no entries yet
+      if (elCount.naturalWidth === 1) {
+        return;
+      }
+
+      elCount.width = elCount.naturalWidth;
+      elCount.height = elCount.naturalHeight;
+
+      const hatebuUrl = `https://b.hatena.ne.jp/entry/${url}`;
+      const elHatebuLink = document.createElement('a');
+      elHatebuLink.href = hatebuUrl;
+      elHatebuLink.target = '_blank';
+
+      elHatebuLink.appendChild(elCount);
+      elLink.parentElement.appendChild(elHatebuLink);
+    };
 
     /**
      * @param {string} url
@@ -112,11 +128,6 @@
       el.height = 1;
       el.alt = "";
       el.className = "hatebuCount"
-
-      el.onload = () => {
-        el.width = el.naturalWidth;
-        el.height = el.naturalHeight;
-      };
 
       return el;
     }
