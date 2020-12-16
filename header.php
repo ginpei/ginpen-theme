@@ -74,7 +74,7 @@
     </div>
     <div class="span6">
       <div class="well links-col">
-        <ul class="recent-posts links">
+        <ul class="links" data-js="recentPostList">
           <?php wp_get_archives(Array(
             'type' => 'postbypost',
             'limit' => 20,

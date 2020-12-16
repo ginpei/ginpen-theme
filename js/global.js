@@ -94,7 +94,33 @@
   }();
 
   // recent posts
-  $('.recent-posts a').gpHatebuCounter();
+  /** @type {NodeListOf<HTMLAnchorElement>} */
+  (document.querySelectorAll('[data-js="recentPostList"] a')).forEach((elLink) => {
+    const url = elLink.href;
+    const elImg = createHatebuCounterElement(url);
+    elLink.parentElement.appendChild(elImg);
+
+    /**
+     * @param {string} url
+     */
+    function createHatebuCounterElement(url) {
+      const src = `https://b.hatena.ne.jp/entry/image/${url}`;
+
+      const el = document.createElement('img');
+      el.src = src;
+      el.width = 1;
+      el.height = 1;
+      el.alt = "";
+      el.className = "hatebuCount"
+
+      el.onload = () => {
+        el.width = el.naturalWidth;
+        el.height = el.naturalHeight;
+      };
+
+      return el;
+    }
+  });
 
   // external luxury scripts
   $('body').one('pointermove pointerdown', () => {
