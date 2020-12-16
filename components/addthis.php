@@ -5,5 +5,6 @@
 >
   <a class="addthis_button_facebook"></a>
   <a class="addthis_button_twitter"></a>
+  <a class="addthis_button_hatena"></a>
   <a class="addthis_button_compact"></a>
 </div>
