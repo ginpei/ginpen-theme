@@ -349,6 +349,11 @@ a#site-title:hover {
   margin-left: -72px;
   width: 60px;
 }
+#main .addthis {
+  clear: both;
+  display: flex;
+  justify-content: center;
+}
 #main .addthis_toolbox {
   height: 30px;
   margin: 10px 0 0 10px;
@@ -477,9 +482,6 @@ a#site-title:hover {
 #main article .comments-wrapper #commentform textarea {
   width: 90%;
 }
-#main article footer .addthis {
-  margin-left: 90px;
-}
 
 #root-footer {
   border-top: dashed 1px #ccc;
@@ -503,9 +505,6 @@ a#site-title:hover {
 
 .alignright {
   float: right;
-}
-.addthis_button_facebook_like iframe {
-  width: 130px !important;
 }
 
 .jsfiddle {

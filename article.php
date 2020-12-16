@@ -1,9 +1,6 @@
 <article>
   <header>
     <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-    <div class="addthis">
-      <?php get_template_part( 'components/addthis' ); ?>
-    </div>
     <div class="article-status well">
       <div class="post-datetime">投稿日時: <a href="<?php the_permalink() ?>"><time datetime="<?php the_time('c'); ?>"><?php the_time('Y/m/d H:i'); ?></time></a></div>
       <?php if ( get_post_type() == 'post') : ?>
@@ -16,6 +13,9 @@
         </div>
       <?php endif; ?>
       <?php edit_post_link(); ?>
+    </div>
+    <div class="addthis">
+      <?php get_template_part( 'components/addthis' ); ?>
     </div>
   </header>
   <?php if (!is_ssl()) { ?>
