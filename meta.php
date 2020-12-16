@@ -2,9 +2,9 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width">
 <title><?php _meta_echo_title(); ?></title>
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/vendor/google-fonts/Slackey.css" />
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" />
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?0401" />
-<link href='https://fonts.googleapis.com/css2?family=Slackey&display=swap' rel='stylesheet' type='text/css'>
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 <?php if ( is_single() ) : ?>
   <link rel="alternate" media="handheld" href="<?php the_permalink(); ?>">
