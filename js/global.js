@@ -136,8 +136,26 @@
   // external luxury scripts
   $('body').one('pointermove pointerdown', () => {
     setTimeout(() => {
+      setUpAddThis();
+
       loadScript('https://s7.addthis.com/js/300/addthis_widget.js#pubid=ginpei');
     }, 1000);
+
+    function setUpAddThis() {
+      document.querySelectorAll('[data-js="addthis"]').forEach((elContainer) => {
+        const serviceNames = [
+          "addthis_button_facebook",
+          "addthis_button_twitter",
+          "addthis_button_hatena",
+          "addthis_button_compact",
+        ];
+        serviceNames.forEach((serviceName) => {
+          const el = document.createElement('a');
+          el.className = serviceName;
+          elContainer.appendChild(el);
+        });
+      });
+    }
 
     function loadScript(url) {
       const el = document.createElement('script');

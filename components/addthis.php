@@ -2,9 +2,7 @@
   class="addthis_toolbox addthis_default_style addthis_32x32_style"
   addthis:url="<?php the_permalink(); ?>"
   addthis:title="<?php the_title_attribute(); ?>"
+  data-js="addthis"
 >
-  <a class="addthis_button_facebook"></a>
-  <a class="addthis_button_twitter"></a>
-  <a class="addthis_button_hatena"></a>
-  <a class="addthis_button_compact"></a>
+  <!-- see global.js -->
 </div>
