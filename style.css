@@ -353,6 +353,12 @@ a#site-title:hover {
   height: 30px;
   margin: 10px 0 0 10px;
 }
+#main .addthis_toolbox .addthis_button_facebook_like {
+  width: 90px !important; /* overwrite addthis style */
+}
+#main .addthis_toolbox .tweet_iframe_widget {
+  width: 75px !important; /* overwrite addthis style */
+}
 #main .article-status {
   padding: 10px;
   margin: 10px 10px;
