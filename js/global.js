@@ -95,4 +95,17 @@
 
   // recent posts
   $('.recent-posts a').gpHatebuCounter();
+
+  // external luxury scripts
+  $('body').one('pointermove pointerdown', () => {
+    setTimeout(() => {
+      loadScript('https://s7.addthis.com/js/250/addthis_widget.js#pubid=ginpei');
+    }, 1000);
+
+    function loadScript(url) {
+      const el = document.createElement('script');
+      el.src = url;
+      document.head.appendChild(el);
+    }
+  });
 }(jQuery);
