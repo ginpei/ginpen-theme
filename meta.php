@@ -13,8 +13,7 @@
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
 <?php wp_deregister_script('jquery'); ?>
-<?php wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-1.8.0.min.js'); ?>
-<?php wp_enqueue_script('jquery', 'https://code.jquery.com/jquery-1.8.0.js'); ?>
+<?php wp_enqueue_script('jquery', get_template_directory_uri() . '/vendor/jquery/jquery-3.5.1.slim.min.js'); ?>
 <?php if ( is_singular() && get_option( 'thread_comments' ) ) : ?>
   <?php wp_enqueue_script( 'comment-reply' ); ?>
 <?php endif; ?>

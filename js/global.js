@@ -68,7 +68,7 @@
   }();
 
   // in-page link
-  $('a[href^=#]:not([href$=#],.item)').click(function(event) {
+  $('a[href^="#"]:not([href$="#"],.item)').click(function(event) {
     event.preventDefault();
     var href = $(this).attr('href');
     var top = $(href).offset().top;
