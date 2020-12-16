@@ -99,7 +99,7 @@
   // external luxury scripts
   $('body').one('pointermove pointerdown', () => {
     setTimeout(() => {
-      loadScript('https://s7.addthis.com/js/250/addthis_widget.js#pubid=ginpei');
+      loadScript('https://s7.addthis.com/js/300/addthis_widget.js#pubid=ginpei');
     }, 1000);
 
     function loadScript(url) {
