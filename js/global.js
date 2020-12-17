@@ -134,7 +134,14 @@
   });
 
   // external luxury scripts
+  let externalLuxuryScriptsLoaded = false;
   $('body').one('pointermove pointerdown', () => {
+    // for touch + scroll
+    if (externalLuxuryScriptsLoaded) {
+      return;
+    }
+
+    externalLuxuryScriptsLoaded = true;
     setTimeout(() => {
       setUpAddThis();
 
