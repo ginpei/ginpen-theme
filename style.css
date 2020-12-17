@@ -653,7 +653,7 @@ body {
 }
 
 @media (pointer:coarse) {
-  #top ul.links li {
+  li {
     margin-bottom: 0.8em;
   }
 }
