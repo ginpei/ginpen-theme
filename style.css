@@ -61,6 +61,9 @@ table th {
   background-color: #ececec;
   box-shadow: 1px 1px 2px #fff inset;
 }
+a {
+  color: #069; /* overwrite Bootstrap */
+}
 code {
   border-style: none;
   color: inherit;
