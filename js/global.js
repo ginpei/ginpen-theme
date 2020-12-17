@@ -97,7 +97,8 @@
   /** @type {NodeListOf<HTMLAnchorElement>} */
   (document.querySelectorAll('[data-js="recentPostList"] a')).forEach((elLink) => {
     const url = elLink.href;
-    const elCount = createHatebuCounterElement(url);
+    const title = elLink.textContent;
+    const elCount = createHatebuCounterElement(url, title);
     elCount.onload = () => {
       // no entries yet
       if (elCount.naturalWidth === 1) {
@@ -110,6 +111,7 @@
       const hatebuUrl = `https://b.hatena.ne.jp/entry/${url}`;
       const elHatebuLink = document.createElement('a');
       elHatebuLink.href = hatebuUrl;
+      elHatebuLink.title = title;
       elHatebuLink.target = '_blank';
       elHatebuLink.rel = 'noopener';
 
