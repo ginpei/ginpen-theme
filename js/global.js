@@ -111,6 +111,7 @@
       const elHatebuLink = document.createElement('a');
       elHatebuLink.href = hatebuUrl;
       elHatebuLink.target = '_blank';
+      elHatebuLink.rel = 'noopener';
 
       elHatebuLink.appendChild(elCount);
       elLink.parentElement.appendChild(elHatebuLink);
