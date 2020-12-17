@@ -318,7 +318,10 @@ a#site-title:hover {
   margin: 50px 0;
 }
 #main article::after {
-  background-image: url("img/guruguru.png");
+  background-image: url("img/icon-512.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40px;
   content: '';
   display: block;
   height: 28px;
@@ -413,8 +416,9 @@ a#site-title:hover {
   text-shadow: 0 0 5px rgba(0,0,0,.3);
 }
 #main .article-body h3 {
-  background-image: url("img/guruguru.png");
+  background-image: url("img/icon-512.png");
   background-repeat: no-repeat;
+  background-size: 1.2em; /* line-height */
   font-size: 2em;
   margin: 1em 0 1em;
   padding-left: 40px;
