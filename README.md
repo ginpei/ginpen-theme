@@ -4,6 +4,16 @@ https://ginpen.com 用の WordPress テーマ。
 
 ## 開発
 
+### 準備
+
+Docker のボリュームとして Git リポジトリーを載せるため、ディレクトリーは二重にする。（ `.` をボリュームに指定できない。プラグインのインストールに失敗するなど。）
+
+1. `mkdir ginpen-theme-workspace` & `cd`
+2. `git clone ...`
+3. `ln ginpen-theme/.docker/docker-compose.yml .`
+
+Docker の起動は外側 `ginpen-theme-workspace` で、テーマ開発は内側 `ginpen-theme-workspace/ginpen-theme` で行う。
+
 ### 起動
 
 ```console
@@ -13,8 +23,8 @@ $ docker-compose up
 ### 初期状態へ戻す
 
 ```console
-$  docker container rm ginpen-theme_wordpress_1 ginpen-theme_db_1 \
-&& docker volume    rm ginpen-theme_wordpress   ginpen-theme_db
+$ docker container rm ginpen-theme_wordpress_1 ginpen-theme_db_1
+$ sudo rm -rf .backup/ .volumes/
 ```
 
 ### コンテナーへ入る
@@ -23,31 +33,7 @@ $  docker container rm ginpen-theme_wordpress_1 ginpen-theme_db_1 \
 $ docker exec -it ginpen-theme_wordpress_1 bash
 ```
 
-### データベースをエクスポート
-
-（全体バックアップは別項参照。）
-
-```console
-$ docker exec -i ginpen-theme_db_1 mysqldump -u root -p wordpress > .backup/dump.sql
-Enter password:
-```
-
-root のパスワードは `MYSQL_ROOT_PASSWORD` で設定したもの。
-
-### データベースをインポート
-
-`docker exec` でのやり方がよくわからなかった。
-
-```console
-$ docker exec -it ginpen-theme_db_1 bash
-```
-
-```console
-# mysql -u root -p wordpress < /mnt/wp-backup/dump.sql
-Enter password:
-```
-
-## 本番のバックアップをローカル環境へ反映
+## 環境のバックアップ、複製
 
 All-in-One WP Migration を用いる。
 
