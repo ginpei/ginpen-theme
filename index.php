@@ -4,7 +4,7 @@
     <?php get_template_part( 'meta' ); ?>
   </head>
   <body <?php body_class(); ?>>
-    <?php if (!is_user_logged_in()) : ?>
+    <?php if (!_is_production() && !is_user_logged_in()) : ?>
       <?php get_template_part( 'ga' ); ?>
     <?php endif; ?>
     <header id="root-header">
@@ -18,3 +18,8 @@
     </footer>
   </body>
 </html>
+
+<?
+function _is_production() {
+  return $_SERVER['SERVER_NAME'] !== "ginpen.com";
+}
