@@ -5,7 +5,7 @@
   </head>
   <body <?php body_class(); ?>>
     <?php if (!_is_production() && !is_user_logged_in()) : ?>
-      <?php get_template_part( 'ga' ); ?>
+      <?php get_template_part( 'components/ga' ); ?>
     <?php endif; ?>
     <header id="root-header">
       <?php get_template_part( 'header' ); ?>
