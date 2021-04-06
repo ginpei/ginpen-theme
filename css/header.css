@@ -1,0 +1,28 @@
+.header {
+  background-color: var(--theme-bg);
+  color: var(--theme-fg);
+}
+  .header a {
+    color: inherit;
+  }
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-siteTitle {
+  font-weight: bold;
+}
+
+.header-itemList {
+  display: flex;
+}
+
+.header-Item {
+  margin-left: 1em;
+}
+
+.header-Item-content {
+  display: none;
+}
