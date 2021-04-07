@@ -1,6 +1,12 @@
 :root {
   --basic-bg: #fff;
   --basic-fg: #333;
+  --font-base: 16px;
+  --font-small: 0.7rem;
   --theme-bg: #036;
   --theme-fg: #fff;
+}
+
+:root {
+  font-size: var(--font-base);
 }

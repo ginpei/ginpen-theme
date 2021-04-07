@@ -1,4 +1,6 @@
 .header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .header-Logo {
@@ -36,4 +38,18 @@ a.header-Logo-siteNameBlock {
 .header-Logo-siteCopy {
   font-size: 12px;
   opacity: 0.8;
+}
+
+.header-infoList {
+  border-radius: 0.3rem;
+  border: 1px solid #eee;
+  box-shadow: 0 0 2rem #0001 inset;
+  font-size: var(--font-small);
+  list-style-type: none;
+  padding: 0.5rem 1rem;
+}
+
+a.header-infoItem {
+  display: inline-grid;
+  grid-template-columns: 20px auto;
 }
