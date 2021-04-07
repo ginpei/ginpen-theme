@@ -7,9 +7,8 @@
     <?php if (!_is_production() && !is_user_logged_in()) : ?>
       <?php get_template_part( 'components/ga' ); ?>
     <?php endif; ?>
-    <header id="root-header">
-      <?php get_template_part( 'header' ); ?>
-    </header>
+    <?php get_template_part( 'header' ); ?>
+    <?php get_template_part( 'site-info' ); ?>
     <div id="root-body">
       <?php get_template_part( 'body' ); ?>
     </div>
