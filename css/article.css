@@ -1,0 +1,44 @@
+.article {
+}
+
+h1.article-title {
+  border: 10px solid transparent;
+  border-image: url("../img/fukidashi-border.gif") 10;
+  margin: 0 80px;
+  min-height: 2em;
+  padding: 10px;
+}
+  h1.article-title:before {
+    background-image: url("../img/fukidashi-char.gif");
+    content: "";
+    display: block;
+    float: left;
+    height: 78px;
+    margin-left: -72px;
+    width: 60px;
+  }
+
+a.article-titleLink {
+  color: inherit;
+  display: block;
+  text-decoration: none;
+}
+  a.article-titleLink:hover {
+    text-decoration: underline;
+  }
+
+.article-status {
+  border-radius: 0.3rem;
+  border: 1px solid #eee;
+  box-shadow: 0 0 2rem #0001 inset;
+  font-size: var(--font-small);
+  list-style-type: none;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.article-statusItem + .article-statusItem::before {
+  color: #eee;
+  content: "|";
+  margin: 0.5rem;
+}

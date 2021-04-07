@@ -5,3 +5,8 @@
 @import "./navbar.css";
 @import "./header.css";
 @import "./footer.css";
+
+@import "./article.css";
+
+/* external */
+@import "./addthis.css";

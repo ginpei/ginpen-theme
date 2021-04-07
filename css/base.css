@@ -10,6 +10,7 @@ body {
   font-family: sans-serif;
 }
 
+article,
 form,
 h1,
 h2,
@@ -18,6 +19,11 @@ ol,
 p,
 ul {
   margin-top: 1em;
+}
+
+ol,
+ul {
+  padding-inline-start: 40px;
 }
 
 li + li {
