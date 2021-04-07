@@ -1,0 +1,39 @@
+.header {
+}
+
+.header-Logo {
+  margin-bottom: 1em; /* space for rotated logo */
+}
+
+.header-Logo::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+a.header-Logo-siteNameBlock {
+  background-color: var(--theme-bg);
+  border-radius: 0.2em;
+  box-shadow: 3px 3px 5px #0009;
+  color: var(--theme-fg);
+  display: block;
+  float: left;
+  line-height: 1em;
+  outline-offset: -5px;
+  outline: 1px dashed #99f;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  transform: rotate(-5deg);
+}
+
+.header-Logo-siteName {
+  font-family: Slackey;
+  font-size: 36px;
+  padding: 0.3em 0;
+}
+
+.header-Logo-siteCopy {
+  font-size: 12px;
+  opacity: 0.8;
+}

@@ -1,12 +1,19 @@
-<div class="u-container">
-  <div>
-    <a id="site-title" href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
-      <hgroup>
-        <h1>Ginpen.com</h1>
-        <h2>Powered by JavaScript and JapaneseSushi</h2>
-      </hgroup>
-    </a>
+<div class="header">
+  <div class="u-container">
+    <div class="header-Logo">
+      <a
+        class="header-Logo-siteNameBlock"
+        href="<?php echo esc_url( home_url( '/' ) ); ?>"
+        rel="home"
+      >
+        <div class="header-Logo-siteName">Ginpen.com</div>
+        <div class="header-Logo-siteCopy">Powered by JavaScript and JapaneseSushi</div>
+      </a>
+    </div>
   </div>
+</div>
+
+<div class="u-container">
   <nav class="row-fluid well links-row">
     <div class="span6">
       <div class="well links-col">
