@@ -16,6 +16,6 @@
 }
   @media (pointer:coarse) {
     :root {
-      --clickable-height: 25px;
+      --clickable-height: 27px;
     }
   }
