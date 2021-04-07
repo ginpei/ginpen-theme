@@ -1,28 +1,28 @@
-.header {
+.navbar {
   background-color: var(--theme-bg);
   color: var(--theme-fg);
 }
-  .header a {
+  .navbar a {
     color: inherit;
   }
 
-.header-inner {
+.navbar-inner {
   display: flex;
   justify-content: space-between;
 }
 
-.header-siteTitle {
+.navbar-siteTitle {
   font-weight: bold;
 }
 
-.header-itemList {
+.navbar-itemList {
   display: flex;
 }
 
-.header-Item {
+.navbar-Item {
   margin-left: 1em;
 }
 
-.header-Item-content {
+.navbar-Item-content {
   display: none;
 }
