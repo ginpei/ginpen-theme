@@ -8,13 +8,9 @@
       <?php get_template_part( 'components/ga' ); ?>
     <?php endif; ?>
     <?php get_template_part( 'header' ); ?>
-    <?php get_template_part( 'site-info' ); ?>
-    <div id="root-body">
-      <?php get_template_part( 'body' ); ?>
-    </div>
-    <footer id="root-footer">
-      <?php get_template_part( 'footer' ); ?>
-    </footer>
+    <?php // get_template_part( 'site-info' ); ?>
+    <?php get_template_part( 'body' ); ?>
+    <?php get_template_part( 'footer' ); ?>
   </body>
 </html>
 
