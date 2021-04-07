@@ -10,3 +10,12 @@
 :root {
   font-size: var(--font-base);
 }
+
+:root {
+  --clickable-height: 1rem;
+}
+  @media (pointer:coarse) {
+    :root {
+      --clickable-height: 25px;
+    }
+  }

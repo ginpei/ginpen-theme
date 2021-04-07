@@ -19,3 +19,7 @@ p,
 ul {
   margin-top: 1em;
 }
+
+li + li {
+  margin-top: calc(var(--clickable-height) - var(--font-base));
+}

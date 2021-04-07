@@ -2,6 +2,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+  @media (max-width:640px) {
+    .header {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto;
+    }
+  }
 
 .header-Logo {
   margin-bottom: 1em; /* space for rotated logo */
@@ -48,6 +54,11 @@ a.header-Logo-siteNameBlock {
   list-style-type: none;
   padding: 0.5rem 1rem;
 }
+  @media (max-width:640px) {
+    .header-infoList {
+      font-size: var(--font-base);
+    }
+  }
 
 a.header-infoItem {
   display: inline-grid;
