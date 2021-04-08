@@ -7,10 +7,12 @@ body {
   background-color: var(--basic-bg);
   color: var(--basic-fg);
   margin: 0;
-  font-family: sans-serif;
+  font-family: "游ゴシック", sans-serif;
 }
 
 article,
+figcaption,
+figure,
 form,
 h1,
 h2,
@@ -25,6 +27,10 @@ ol,
 ul {
   padding-inline-start: 40px;
 }
+  li > ol,
+  li > ul {
+    margin-top: 0;
+  }
 
 li + li {
   margin-top: calc(var(--clickable-height) - 1em);

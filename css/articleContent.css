@@ -1,0 +1,50 @@
+.articleContent {
+}
+
+.articleContent h2,
+.articleContent h3 {
+  line-height: 2em;
+  margin-top: 2em;
+}
+
+.articleContent h2 {
+  border-radius: 0.3rem;
+  border: 1px solid lightgrey;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.articleContent h3 {
+  font-size: 1.3rem;
+}
+  .articleContent h3::before {
+    background-image: url("../img/icon-512.png");
+    background-size: 100%;
+    content: "";
+    display: inline-block;
+    height: 2em;
+    vertical-align: middle;
+    margin-inline-end: 0.2em;
+    width: 2em;
+  }
+
+.articleContent pre {
+  overflow: auto;
+}
+
+.articleContent figure {
+  border-radius: 0.3rem;
+  border: 1px solid #eee;
+  box-shadow: 0 0 2rem #0001 inset;
+  font-size: var(--font-small);
+  padding: 0.5rem 1rem;
+}
+
+.articleContent img {
+  max-width: 100%;
+  height: auto;
+}
+  .articleContent img.bordered {
+    border: 1px solid lightgray;
+    border-radius: 0.2rem;
+  }
