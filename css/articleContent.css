@@ -38,11 +38,14 @@
   box-shadow: 0 0 2rem #0001 inset;
   font-size: var(--font-small);
   padding: 0.5rem 1rem;
+  text-align: center;
 }
 
-.articleContent img {
-  max-width: 100%;
+.articleContent figure img {
   height: auto;
+  max-height: 50vh;
+  max-width: 100%;
+  width: auto;
 }
   .articleContent img.bordered {
     border: 1px solid lightgray;
