@@ -1,4 +1,9 @@
 .articleContent {
+  border-radius: 0.2rem;
+  box-shadow: 1rem 0 2rem -2rem #0003, -1rem 0 2rem -2rem #0003;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding: 1rem;
 }
 
 .articleContent h2,
