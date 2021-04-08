@@ -2,6 +2,8 @@
 :root {
   --basic-bg: #fff;
   --basic-fg: #333;
+  --box-bg: #f9f9f9;
+  --box-border-color: #eee;
   --link-fg: #059;
   --link-hover-fg: #a00;
   --theme-bg: #036;
@@ -13,6 +15,7 @@
   --clickable-height: 1rem;
   --font-base: 16px;
   --font-small: 0.7rem;
+  --radius: 0.3rem;
   font-size: var(--font-base);
 }
   @media (pointer:coarse) {

@@ -34,11 +34,10 @@ a.article-titleLink {
   }
 
 .article-status {
-  border-radius: 0.3rem;
-  border: 1px solid #eee;
-  box-shadow: 0 0 2rem #0001 inset;
+  background-color: var(--box-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--box-border-color);
   font-size: var(--font-small);
-  list-style-type: none;
   margin-top: 1rem;
   padding: 0.5rem 1rem;
 }

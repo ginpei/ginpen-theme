@@ -1,5 +1,5 @@
 .articleContent {
-  border-radius: 0.2rem;
+  border-radius: var(--radius);
   box-shadow: 1rem 0 2rem -2rem #0003, -1rem 0 2rem -2rem #0003;
   margin-left: -1rem;
   margin-right: -1rem;
@@ -13,7 +13,7 @@
 }
 
 .articleContent h2 {
-  border-radius: 0.3rem;
+  border-radius: var(--radius);
   border: 1px solid lightgrey;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
@@ -38,9 +38,9 @@
 }
 
 .articleContent figure {
-  background-color: #f9f9f9;
-  border-radius: 0.3rem;
-  border: 1px solid #eee;
+  background-color: var(--box-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--box-border-color);
   font-size: var(--font-small);
   padding: 0.5rem 1rem;
   text-align: center;
@@ -62,7 +62,7 @@
   }
 
 .articleContent img.bordered {
-  border-radius: 0.2rem;
+  border-radius: var(--radius);
   border: 1px solid lightgray;
   box-shadow: 0 0 1rem #0003;
 }
