@@ -8,6 +8,11 @@ h1.article-title {
   min-height: 2em;
   padding: 10px;
 }
+  @media (max-width:640px) {
+    h1.article-title {
+      margin-right: 0;
+    }
+  }
   h1.article-title:before {
     background-image: url("../img/fukidashi-char.gif");
     content: "";
