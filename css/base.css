@@ -23,12 +23,10 @@ ul {
   margin-top: 1em;
 }
 
-ol,
-ul {
+:where(ol, ul) {
   padding-inline-start: 40px;
 }
-  li > ol,
-  li > ul {
+  li > :where(ol, ul) {
     margin-top: 0;
   }
 
