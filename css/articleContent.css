@@ -40,13 +40,21 @@
   padding: 0.5rem 1rem;
   text-align: center;
 }
-
-.articleContent figure img {
-  height: auto;
-  max-height: 50vh;
-  max-width: 100%;
-  width: auto;
-}
+  .articleContent figure a {
+    display: block;
+  }
+  .articleContent figure img {
+    height: auto;
+    max-height: 50vh;
+    max-width: 100%;
+    width: auto;
+  }
+  .articleContent figure a img {
+    transition: transform 100ms;
+  }
+  .articleContent figure a:hover img {
+    transform: scale(1.01);
+  }
 
 .articleContent img.bordered {
   border-radius: 0.2rem;
