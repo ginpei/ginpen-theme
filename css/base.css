@@ -40,3 +40,10 @@ li + li {
   :where(:link, :visited):hover {
     color: var(--link-hover-fg);
   }
+
+code {
+  background-color: #0001;
+  border-radius: 0.2em;
+  color: #4f4f4f;
+  padding: 0 0.5em;
+}
