@@ -2,6 +2,8 @@
 :root {
   --basic-bg: #fff;
   --basic-fg: #333;
+  --link-fg: #059;
+  --link-hover-fg: #a00;
   --theme-bg: #036;
   --theme-fg: #fff;
 }

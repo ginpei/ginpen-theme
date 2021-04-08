@@ -35,3 +35,10 @@ ul {
 li + li {
   margin-top: calc(var(--clickable-height) - 1em);
 }
+
+:where(:link, :visited) {
+  color: var(--link-fg);
+}
+  :where(:link, :visited):hover {
+    color: var(--link-hover-fg);
+  }
