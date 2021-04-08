@@ -33,9 +33,9 @@
 }
 
 .articleContent figure {
+  background-color: #f9f9f9;
   border-radius: 0.3rem;
   border: 1px solid #eee;
-  box-shadow: 0 0 2rem #0001 inset;
   font-size: var(--font-small);
   padding: 0.5rem 1rem;
   text-align: center;
@@ -47,7 +47,9 @@
   max-width: 100%;
   width: auto;
 }
-  .articleContent img.bordered {
-    border: 1px solid lightgray;
-    border-radius: 0.2rem;
-  }
+
+.articleContent img.bordered {
+  border-radius: 0.2rem;
+  border: 1px solid lightgray;
+  box-shadow: 0 0 1rem #0003;
+}
