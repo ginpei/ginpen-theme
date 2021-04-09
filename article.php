@@ -8,16 +8,16 @@
         <span class="article-statusItem">
           投稿日時: <a href="<?php the_permalink() ?>"><time datetime="<?php the_time('c'); ?>"><?php the_time('Y/m/d H:i'); ?></time></a>
         </span>
-        <?php if ( get_post_type() == 'post') : ?>
-          <span class="article-statusItem">
-            カテゴリー:
-            <?php the_category(', '); ?>
-          </span>
-          <span class="article-statusItem">
-            <?php the_tags(); ?>
-          </span>
-        <?php endif; ?>
         <?php if (is_user_logged_in()) : ?>
+          <?php if ( get_post_type() == 'post') : ?>
+            <span class="article-statusItem">
+              カテゴリー:
+              <?php the_category(', '); ?>
+            </span>
+            <span class="article-statusItem">
+              <?php the_tags(); ?>
+            </span>
+          <?php endif; ?>
           <span class="article-statusItem">
             <?php edit_post_link(); ?>
           </span>
