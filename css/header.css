@@ -46,19 +46,38 @@ a.header-Logo-siteNameBlock {
   opacity: 0.8;
 }
 
-ul.header-infoList {
-  margin: 0;
-  padding: 0;
+.header-infoRowGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: space-evenly;
+  min-height: 100%;
+}
+
+.header-infoRow {
+  display: flex;
+  flex-wrap: wrap;
   font-size: var(--font-small);
-  list-style-type: none;
+  gap: 1rem;
 }
   @media (max-width:640px) {
     .header-infoList {
       font-size: var(--font-base);
     }
   }
+  .header-infoList .br {
+    width: 100%;
+  }
 
 a.header-infoItem {
   display: inline-grid;
   grid-template-columns: 20px auto;
+}
+  /* a.header-infoItem + a.header-infoItem {
+    margin-left: 1em;
+  } */
+
+.header-infoIcon {
+  display: grid;
+  place-items: center;
 }
