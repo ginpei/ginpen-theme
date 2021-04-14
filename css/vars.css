@@ -14,6 +14,7 @@
 :root {
   --clickable-height: 1rem;
   --font-base: 16px;
+  --font-small-x: 0.6rem;
   --font-small: 0.7rem;
   --radius: 0.3rem;
   font-size: var(--font-base);
@@ -23,3 +24,7 @@
       --clickable-height: 27px;
     }
   }
+
+:root {
+  --transition-duration: 200ms;
+}

@@ -1,6 +1,11 @@
 .navbar {
   background-color: var(--theme-bg);
   color: var(--theme-fg);
+  font-size: var(--font-small-x);
+  height: var(--font-small-x);
+  line-height: var(--font-small-x);
+  position: sticky;
+  top: 0;
 }
   .navbar a {
     color: inherit;
@@ -11,9 +16,16 @@
   justify-content: space-between;
 }
 
-.navbar-siteTitle {
-  font-weight: bold;
+a.navbar-siteTitle {
+  text-decoration: none;
+  transition: opacity var(--transition-duration);
 }
+  a.navbar-siteTitle:hover {
+    text-decoration: underline;
+  }
+  a.navbar-siteTitle[data-hidden] {
+    opacity: 0;
+  }
 
 .navbar-itemList {
   display: flex;
