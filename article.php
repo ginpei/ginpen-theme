@@ -4,24 +4,26 @@
       <h1 class="article-title">
         <a class="article-titleLink" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
       </h1>
-      <div class="article-status">
-        <span class="article-statusItem">
-          投稿日時: <a href="<?php the_permalink() ?>"><time datetime="<?php the_time('c'); ?>"><?php the_time('Y/m/d H:i'); ?></time></a>
-        </span>
-        <?php if (is_user_logged_in()) : ?>
-          <?php if ( get_post_type() == 'post') : ?>
+      <div class="u-infoBox">
+        <div class="article-status">
+          <span class="article-statusItem">
+            投稿日時: <a href="<?php the_permalink() ?>"><time datetime="<?php the_time('c'); ?>"><?php the_time('Y/m/d H:i'); ?></time></a>
+          </span>
+          <?php if (is_user_logged_in()) : ?>
+            <?php if ( get_post_type() == 'post') : ?>
+              <span class="article-statusItem">
+                カテゴリー:
+                <?php the_category(', '); ?>
+              </span>
+              <span class="article-statusItem">
+                <?php the_tags(); ?>
+              </span>
+            <?php endif; ?>
             <span class="article-statusItem">
-              カテゴリー:
-              <?php the_category(', '); ?>
-            </span>
-            <span class="article-statusItem">
-              <?php the_tags(); ?>
+              <?php edit_post_link(); ?>
             </span>
           <?php endif; ?>
-          <span class="article-statusItem">
-            <?php edit_post_link(); ?>
-          </span>
-        <?php endif; ?>
+        </div>
       </div>
       <?php get_template_part( 'components/addthis' ); ?>
     </div>

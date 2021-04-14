@@ -34,12 +34,7 @@ a.article-titleLink {
   }
 
 .article-status {
-  background-color: var(--box-bg);
-  border-radius: var(--radius);
-  border: 1px solid var(--box-border-color);
   font-size: var(--font-small);
-  margin-top: 1rem;
-  padding: 0.5rem 1rem;
 }
 
 .article-statusItem + .article-statusItem::before {

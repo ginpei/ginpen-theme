@@ -46,13 +46,11 @@ a.header-Logo-siteNameBlock {
   opacity: 0.8;
 }
 
-.header-infoList {
-  background-color: var(--box-bg);
-  border-radius: var(--radius);
-  border: 1px solid var(--box-border-color);
+ul.header-infoList {
+  margin: 0;
+  padding: 0;
   font-size: var(--font-small);
   list-style-type: none;
-  padding: 0.5rem 1rem;
 }
   @media (max-width:640px) {
     .header-infoList {
