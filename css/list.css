@@ -15,11 +15,9 @@ a.list-link {
     background-color: var(--basic-moderate-bg);
   }
 
-.list-asideLinkText {
+.list-linkTime {
   color: var(--basic-moderate-fg);
+  display: block;
   font-size: var(--font-small);
-}
-
-.list-linkTitle {
   text-decoration: underline;
 }
