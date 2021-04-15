@@ -13,7 +13,7 @@
     <div class="u-infoBox">
       <div class="header-infoRowGroup">
         <div class="header-infoRow">
-          <a class="header-infoItem" href="/about">
+          <a class="header-infoItem" href="/about/">
             <span class="header-infoIcon">
               <img src="<?= get_template_directory_uri() ?>/img/icon-512.png" width="16" height="16" alt="" />
             </span>
