@@ -19,5 +19,8 @@ a.list-link {
   color: var(--basic-moderate-fg);
   display: block;
   font-size: var(--font-small);
+}
+
+.list-linkTitle {
   text-decoration: underline;
 }
