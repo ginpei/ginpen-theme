@@ -22,3 +22,16 @@ a.list-link {
 .list-postTitle {
   text-decoration: underline;
 }
+
+.list-pages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+  .list-pages a {
+    display: block;
+  }
+
+.list-nextPage {
+  text-align: right;
+}

@@ -12,5 +12,9 @@
         </li>
       <?php endwhile; ?>
     </ul>
+    <div class="list-pages">
+      <div class="list-prevPage"><?php previous_posts_link('<div class="u-infoBox">&larr; 前</div>'); ?></div>
+      <div class="list-nextPage"><?php next_posts_link('<div class="u-infoBox">次 &rarr;</div>'); ?></div>
+    </div>
   </div>
 </main>
