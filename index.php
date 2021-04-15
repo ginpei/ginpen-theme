@@ -9,7 +9,7 @@
     <?php endif; ?>
     <?php get_template_part( 'navbar' ); ?>
     <?php get_template_part( 'header' ); ?>
-    <?php if ( is_single() ) : ?>
+    <?php if ( is_singular() ) : ?>
       <?php get_template_part( 'body' ); ?>
     <?php else : ?>
       <?php get_template_part( 'list' ); ?>
