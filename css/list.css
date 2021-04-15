@@ -11,8 +11,8 @@ a.list-link {
   display: block;
   text-decoration: none;
 }
-  a.list-link:hover {
-    box-shadow: 0 0 0.1em var(--link-fg) inset;
+  a.list-link:where(:focus, :hover) {
+    background-color: var(--basic-moderate-bg);
   }
 
 .list-asideLinkText {
