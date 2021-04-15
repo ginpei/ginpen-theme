@@ -10,7 +10,7 @@
     <?php get_template_part( 'navbar' ); ?>
     <?php get_template_part( 'header' ); ?>
     <?php if ( is_singular() ) : ?>
-      <?php get_template_part( 'body' ); ?>
+      <?php get_template_part( 'article', get_post_format() ); ?>
     <?php else : ?>
       <?php get_template_part( 'list' ); ?>
     <?php endif ?>
