@@ -1,0 +1,25 @@
+ul.list-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+li.list-item {
+  margin-top: 1rem;
+}
+
+a.list-link {
+  display: block;
+  text-decoration: none;
+}
+  a.list-link:hover {
+    box-shadow: 0 0 0.1em var(--link-fg) inset;
+  }
+
+.list-asideLinkText {
+  color: var(--basic-moderate-fg);
+  font-size: var(--font-small);
+}
+
+.list-linkTitle {
+  text-decoration: underline;
+}

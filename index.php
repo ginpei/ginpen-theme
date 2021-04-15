@@ -9,7 +9,11 @@
     <?php endif; ?>
     <?php get_template_part( 'navbar' ); ?>
     <?php get_template_part( 'header' ); ?>
-    <?php get_template_part( 'body' ); ?>
+    <?php if ( is_single() ) : ?>
+      <?php get_template_part( 'body' ); ?>
+    <?php else : ?>
+      <?php get_template_part( 'list' ); ?>
+    <?php endif ?>
     <?php get_template_part( 'footer' ); ?>
   </body>
 </html>
