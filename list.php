@@ -1,5 +1,6 @@
 <main class="list">
   <div class="u-container">
+    <?php _body_echo_type_title(); ?>
     <ul class="list-list">
       <?php while ( have_posts() ) : the_post(); ?>
         <li class="list-item">
@@ -18,3 +19,24 @@
     </div>
   </div>
 </main>
+
+<?php // ------------------------------------------------------------------
+/**
+ * Write heading for search result, category archive or tag archive.
+ */
+function _body_echo_type_title() {
+  if ( is_search() ) {
+    $title = '検索結果：' . get_search_query();
+  }
+  elseif ( is_category() ) {
+    $title = 'カテゴリー：' . single_term_title('', false);
+  }
+  elseif ( is_tag() ) {
+    $title = 'タグ：' . single_term_title('', false);
+  }
+
+  if ( $title ) {
+    echo "<h1 class=\"well\">$title</h1>";
+  }
+}
+?>
