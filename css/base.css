@@ -34,6 +34,12 @@ li + li {
   margin-top: calc(var(--clickable-height) - 1em);
 }
 
+blockquote {
+  background-color: var(--basic-moderate-bg);
+  border-left: 0.3em solid #ddd;
+  padding-left: 0.5em;
+}
+
 :where(:link, :visited) {
   color: var(--link-fg);
 }

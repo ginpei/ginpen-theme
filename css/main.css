@@ -11,5 +11,8 @@
 @import "./article.css";
 @import "./articleContent.css";
 
+@import "./functions/shortcode_translate_src.css";
+@import "./functions/shortcode_translate_dest.css";
+
 /* external */
 @import "./addthis.css";

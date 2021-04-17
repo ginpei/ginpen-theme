@@ -10,7 +10,7 @@ remove_action( 'wp_head', 'wp_generator' );
 
 function shortcode_translate_src($attr, $content = '') {
   $withTag = (substr(trim($content),0,1) === '<' && substr(trim($content),-1) === '>');
-  $html = '<blockquote class="article-translate-src">';
+  $html = '<blockquote class="functions-shortcode_translate_src">';
   if (!$withTag) { $html .= '<p>'; }
   $html .= $content;
   if (!$withTag) { $html .= '</p>'; }
@@ -21,7 +21,7 @@ add_shortcode('translate-src', 'shortcode_translate_src');
 
 function shortcode_translate_dest($attr, $content = '') {
   $withTag = (substr(trim($content),0,1) === '<' && substr(trim($content),-1) === '>');
-  $html = '<div class="article-translate-dest">';
+  $html = '<div class="functions-shortcode_translate_dest">';
   if (!$withTag) { $html .= '<p>'; }
   $html .= $content;
   if (!$withTag) { $html .= '</p>'; }
