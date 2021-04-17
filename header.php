@@ -23,7 +23,7 @@
             <span class="header-infoIcon">📻</span>
             RSS
           </a>
-          <a class="header-infoItem header-infoLastItemInLine" href="https://www.google.co.jp/search?q=site%3Bginpen.com">
+          <a class="header-infoItem header-infoLastItemInLine" href="https://www.google.co.jp/search?q=site%3Aginpen.com">
             <span class="header-infoIcon">🔍</span>
             検索
           </a>
