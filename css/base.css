@@ -48,8 +48,8 @@ blockquote {
   }
 
 code {
-  background-color: #0001;
+  background-color: var(--code-bg);
   border-radius: 0.2em;
-  color: #4f4f4f;
+  color: var(--code-fg);
   padding: 0 0.5em;
 }
