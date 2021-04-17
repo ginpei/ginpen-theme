@@ -14,5 +14,4 @@
 @import "./functions/shortcode_translate_src.css";
 @import "./functions/shortcode_translate_dest.css";
 
-/* external */
-@import "./addthis.css";
+@import "./external/addthis.css";
