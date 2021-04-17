@@ -19,6 +19,7 @@ h2,
 h3,
 ol,
 p,
+pre,
 ul {
   margin-top: 1em;
 }
@@ -39,6 +40,16 @@ blockquote {
   border-left: 0.3em solid #ddd;
   padding-left: 0.5em;
 }
+
+pre {
+  background-color: #333;
+  color: #fff;
+  font-size: var(--font-small);
+}
+  pre code {
+    background-color: transparent;
+    color: inherit;
+  }
 
 :where(:link, :visited) {
   color: var(--link-fg);
