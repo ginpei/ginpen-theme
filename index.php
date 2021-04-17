@@ -18,7 +18,7 @@
   </body>
 </html>
 
-<?
+<?php
 function _is_production() {
   return $_SERVER['SERVER_NAME'] !== "ginpen.com";
 }
