@@ -5,7 +5,10 @@
 <title><?php _meta_echo_title(); ?></title>
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.js" type="module"></script>
-<link rel="modulepreload" href="<?php echo get_template_directory_uri(); ?>/js/floating-header.js">
+<?php
+_echo_js_module_preload("addThis.js");
+_echo_js_module_preload("floating-header.js");
+?>
 
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <?php
@@ -57,6 +60,12 @@ function _meta_echo_title() {
 	if ( $paged >= 2 || $page >= 2 ) {
 		echo $separator . ' Page ' . max( $paged, $page );
   }
+}
+
+function _echo_js_module_preload($fileName) {
+  $dir = get_template_directory_uri();
+  $href = "$dir/js/$fileName";
+  echo "<link rel=\"modulepreload\" href=\"$href\">";
 }
 
 function _echo_style_preload($fileName) {
