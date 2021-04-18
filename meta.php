@@ -8,9 +8,27 @@
 <link rel="modulepreload" href="<?php echo get_template_directory_uri(); ?>/js/floating-header.js">
 
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
-<link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/main.css" as="style">
-<link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/elements.css" as="style">
-<link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/utils.css" as="style">
+<?php
+_echo_style_preload("main.css");
+
+_echo_style_preload("vars.css");
+_echo_style_preload("elements.css");
+_echo_style_preload("utils.css");
+
+_echo_style_preload("navbar.css");
+_echo_style_preload("header.css");
+_echo_style_preload("footer.css");
+
+_echo_style_preload("list.css");
+
+_echo_style_preload("article.css");
+_echo_style_preload("articleContent.css");
+
+_echo_style_preload("functions/shortcode_translate_src.css");
+_echo_style_preload("functions/shortcode_translate_dest.css");
+
+_echo_style_preload("external/addThis.css");
+?>
 
 <?php wp_head(); ?>
 
@@ -40,4 +58,11 @@ function _meta_echo_title() {
 		echo $separator . ' Page ' . max( $paged, $page );
   }
 }
+
+function _echo_style_preload($fileName) {
+  $dir = get_template_directory_uri();
+  $href = "$dir/css/$fileName";
+  echo "<link rel=\"preload\" href=\"$href\" as=\"style\">";
+}
+
 ?>
