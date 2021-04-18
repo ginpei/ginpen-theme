@@ -1,0 +1,20 @@
+.c-addThis {
+  margin-top: 1rem;
+}
+/* overwrite AddThis given styles */
+  .c-addThis .addthis_toolbox {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+    height: 32px;
+    justify-content: center;
+  }
+  .c-addThis .addthis_toolbox a {
+    margin-bottom: 0;
+  }
+  .c-addThis .addthis_toolbox .atclear {
+    display: none;
+  }
+  .c-addThis .at-icon-wrapper {
+    vertical-align: middle;
+  }

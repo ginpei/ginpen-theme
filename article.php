@@ -25,7 +25,7 @@
           <?php endif; ?>
         </div>
       </div>
-      <?php get_template_part( 'components/addthis' ); ?>
+      <?php get_template_part( 'components/addThis' ); ?>
     </div>
   </header>
   <div class="article-body">
@@ -38,7 +38,7 @@
   </div>
   <footer>
     <?php if ( is_single() ) : ?>
-      <?php get_template_part( 'components/addthis' ); ?>
+      <?php get_template_part( 'components/addThis' ); ?>
       <nav class="post-neighbers nav">
         <?php // next_post_link('<span class="next well">%link</span>', '&larr; %title'); ?>
         <?php // previous_post_link('<span class="prev well">%link</span>', '%title &rarr;'); ?>
