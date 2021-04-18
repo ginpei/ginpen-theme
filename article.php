@@ -25,7 +25,9 @@
           <?php endif; ?>
         </div>
       </div>
-      <?php get_template_part( 'components/addThis' ); ?>
+      <?php if ( is_single() ) : ?>
+        <?php get_template_part( 'components/addThis' ); ?>
+      <?php endif; ?>
     </div>
   </header>
   <div class="article-body">
