@@ -2,12 +2,11 @@
 :root {
   --basic-bg: #fff;
   --basic-fg: #333;
-  --basic-moderate-bg: #f9f9f9;
-  --basic-moderate-fg: #555;
   --code-bg: #0001;
   --code-fg: #4f4f4f;
   --box-bg: #fcfcfc;
   --box-border-color: #eee;
+  --box-fg: #555;
   --link-fg: #059;
   --link-hover-fg: #a00;
   --theme-bg: #036;

@@ -36,7 +36,7 @@ li + li {
 }
 
 blockquote {
-  background-color: var(--basic-moderate-bg);
+  background-color: var(--box-bg);
   border-left: 0.3em solid #ddd;
   padding-left: 0.5em;
 }

@@ -11,11 +11,11 @@ a.list-link {
   text-decoration: none;
 }
   a.list-link:where(:focus, :hover) {
-    background-color: var(--basic-moderate-bg);
+    background-color: var(--box-bg);
   }
 
 .list-postTime {
-  color: var(--basic-moderate-fg);
+  color: var(--box-fg);
   display: block;
   font-size: var(--font-small);
 }
