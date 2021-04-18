@@ -9,7 +9,9 @@ export function startHeaderFloating() {
     const threshold = 100;
 
     const top = document.scrollingElement?.scrollTop ?? 0;
-    elTitle.toggleAttribute("data-hidden", top < 100);
+    const hidden = top < 100;
+    elTitle.toggleAttribute("data-hidden", hidden);
+    elTitle.setAttribute("tabindex", hidden ? "-1" : "");
   }
 }
 
