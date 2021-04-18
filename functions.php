@@ -8,6 +8,15 @@ remove_action( 'wp_head', 'rsd_link' );
 remove_action( 'wp_head', 'wlwmanifest_link' );
 remove_action( 'wp_head', 'wp_generator' );
 
+/*
+ * Remove unused resources for performance
+ */
+function remove_unused_wp_resources() {
+  // from WP Gutenberg
+  wp_dequeue_style( 'wp-block-library' );
+}
+add_action( 'wp_enqueue_scripts', 'remove_unused_wp_resources' );
+
 function shortcode_translate_src($attr, $content = '') {
   $withTag = (substr(trim($content),0,1) === '<' && substr(trim($content),-1) === '>');
   $html = '<blockquote class="functions-shortcode_translate_src">';
