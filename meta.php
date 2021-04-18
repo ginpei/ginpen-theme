@@ -62,6 +62,9 @@ function _meta_echo_title() {
   }
 }
 
+// Note: preloading actually does not look effective really
+// because file nestings are not deep now
+// but OK since it looks cool
 function _echo_js_module_preload($fileName) {
   $dir = get_template_directory_uri();
   $href = "$dir/js/$fileName";
