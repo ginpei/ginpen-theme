@@ -10,8 +10,8 @@
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/vendor/google-fonts/Slackey.css" />
 <link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/main.css" as="style">
-<link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/base.css" as="style">
-<link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/util.css" as="style">
+<link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/elements.css" as="style">
+<link rel="preload" href="<?php echo get_template_directory_uri(); ?>/css/utils.css" as="style">
 
 <?php wp_head(); ?>
 

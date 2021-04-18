@@ -1,6 +1,6 @@
 @import "./vars.css";
-@import "./base.css";
-@import "./util.css";
+@import "./elements.css";
+@import "./utils.css";
 
 @import "./navbar.css";
 @import "./header.css";
