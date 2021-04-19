@@ -12,7 +12,7 @@
   }
 
 .header-siteName {
-  font-family: consolas, 'Courier New', Courier, monospace;
+  font-family: var(--site-font-family);
   font-size: var(--font-large);
   line-height: 3rem;
 }

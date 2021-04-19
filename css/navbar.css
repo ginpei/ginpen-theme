@@ -17,6 +17,7 @@
 }
 
 a.navbar-siteTitle {
+  font-family: var(--site-font-family);
   text-decoration: none;
   transition: opacity var(--transition-duration);
 }
