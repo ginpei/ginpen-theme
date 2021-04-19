@@ -3,6 +3,7 @@
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width">
 <title><?php _meta_echo_title(); ?></title>
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/icon-512.png" />
 
 <script src="<?php echo get_template_directory_uri(); ?>/js/main.js" type="module"></script>
 <?php
