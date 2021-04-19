@@ -12,6 +12,8 @@ remove_action( 'wp_head', 'wp_generator' );
  * Remove unused resources for performance
  */
 function remove_unused_wp_resources() {
+  wp_deregister_script( 'wp-embed' );
+
   // from WP Gutenberg
   wp_dequeue_style( 'wp-block-library' );
 }
