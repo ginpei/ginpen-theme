@@ -4,6 +4,7 @@
 }
 
 h1.article-title {
+  --l-char-width: 60px;
   border: 10px solid transparent;
   border-image: url("../img/fukidashi-border.gif") 10;
   margin: 0 80px;
@@ -12,6 +13,7 @@ h1.article-title {
 }
   @media (max-width:640px) {
     h1.article-title {
+      margin-left: var(--l-char-width);
       margin-right: 0;
     }
   }
@@ -22,7 +24,7 @@ h1.article-title {
     float: left;
     height: 78px;
     margin-left: -72px;
-    width: 60px;
+    width: var(--l-char-width);
   }
 
 a.article-titleLink {
