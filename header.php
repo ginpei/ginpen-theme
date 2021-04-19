@@ -1,12 +1,14 @@
 <div class="u-container">
   <div class="header">
-    <a
-      class="header-siteName"
-      href="<?php echo esc_url( home_url( '/' ) ); ?>"
-      rel="home"
-    >
-      Ginpen.com
-    </a>
+    <div class="header-siteName">
+      <a
+        class="header-siteNameLink"
+        href="<?php echo esc_url( home_url( '/' ) ); ?>"
+        rel="home"
+      >
+        Ginpen.com
+      </a>
+    </div>
     <div class="header-infoList">
       <a class="header-infoItem" href="/about/">
         <span class="header-infoIcon">

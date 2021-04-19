@@ -11,17 +11,24 @@
     }
   }
 
-a.header-siteName {
-  align-items: center;
-  color: var(--base-fg);
-  display: flex;
+.header-siteName {
   font-family: consolas, 'Courier New', Courier, monospace;
   font-size: var(--font-large);
+  line-height: 3rem;
+}
+
+a.header-siteNameLink {
+  color: var(--base-fg);
   font-weight: bold;
   text-decoration: none;
 }
-  a.header-siteName:hover {
+  a.header-siteNameLink:hover {
     text-decoration: underline;
+  }
+  @media (max-width:640px) {
+    a.header-siteName {
+      display: inline;
+    }
   }
 
 .header-infoList {
@@ -31,7 +38,8 @@ a.header-siteName {
 }
   @media (max-width:640px) {
     .header-infoList {
-      grid-template-columns: 1fr;
+      display: flex;
+      flex-wrap: wrap;
     }
   }
 
