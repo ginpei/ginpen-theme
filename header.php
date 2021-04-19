@@ -24,7 +24,7 @@
         <span class="header-infoIcon">🔍</span>
         検索
       </a>
-      <a class="header-infoItem" href="http://twitter.com/ginpei_jp">
+      <a class="header-infoItem" href="https://twitter.com/ginpei_jp">
         <span class="header-infoIcon">
           <img src="<?php echo get_template_directory_uri(); ?>/img/Twitter_Logo_Blue.svg" width="16" height="16" alt="" />
         </span>
