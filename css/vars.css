@@ -31,5 +31,5 @@
 
 :root {
   --transition-duration: 200ms;
-  --code-font: consolas, 'Courier New', Courier, monospace;
+  --code-font: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
 }
