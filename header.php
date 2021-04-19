@@ -12,7 +12,7 @@
     <div class="header-infoList">
       <a class="header-infoItem" href="/about/">
         <span class="header-infoIcon">
-          <img src="<?= get_template_directory_uri() ?>/img/icon-512.png" width="16" height="16" alt="" />
+          <img src="<?= get_template_directory_uri() ?>/img/icon-32.png" width="16" height="16" alt="" />
         </span>
         高梨ギンペイ
       </a>
