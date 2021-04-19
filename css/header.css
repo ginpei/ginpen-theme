@@ -12,7 +12,7 @@
   }
 
 .header-siteName {
-  font-family: var(--site-font-family);
+  font-family: var(--code-font);
   font-size: var(--font-large);
   line-height: 3rem;
 }

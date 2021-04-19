@@ -59,6 +59,7 @@ pre {
   }
 
 code {
+  font-family: var(--code-font);
   background-color: var(--code-bg);
   border-radius: 0.2em;
   color: var(--code-fg);

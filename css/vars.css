@@ -31,5 +31,5 @@
 
 :root {
   --transition-duration: 200ms;
-  --site-font-family: consolas, 'Courier New', Courier, monospace;
+  --code-font: consolas, 'Courier New', Courier, monospace;
 }
