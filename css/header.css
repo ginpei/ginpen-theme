@@ -47,9 +47,6 @@ a.header-infoItem {
   display: inline-grid;
   grid-template-columns: 20px auto;
 }
-  /* a.header-infoItem + a.header-infoItem {
-    margin-left: 1em;
-  } */
 
 .header-infoIcon {
   display: grid;
