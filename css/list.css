@@ -3,16 +3,13 @@ ul.list-list {
   padding: 0;
 }
 
+li.list-item {
+  margin-top: 2em;
+}
+
 a.list-link {
-  border-radius: var(--radius);
-  padding-bottom: 0.5rem;
-  padding-top: 0.5rem;
-  display: block;
   text-decoration: none;
 }
-  a.list-link:where(:focus, :hover) {
-    background-color: var(--box-bg);
-  }
 
 .list-postTime {
   color: var(--box-fg);
