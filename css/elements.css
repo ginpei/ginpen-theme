@@ -28,7 +28,7 @@ ul {
   padding-inline-start: 40px;
 }
   li > :where(ol, ul) {
-    margin-top: 0;
+    margin-top: calc(var(--clickable-height) - 1em);
   }
 
 li + li {
