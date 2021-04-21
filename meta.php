@@ -34,6 +34,18 @@ _echo_style_preload("functions/shortcode_translate_dest.css");
 _echo_style_preload("external/addThis.css");
 ?>
 
+<?php
+// header
+_echo_image_preload("icon-32.png");
+_echo_image_preload("Twitter_Logo_Blue.svg");
+_echo_image_preload("GitHub-Mark-64px.png");
+
+// article
+_echo_image_preload("fukidashi-border.gif");
+_echo_image_preload("fukidashi-char.gif");
+_echo_image_preload("icon-512.png");
+?>
+
 <?php wp_head(); ?>
 
 <?php // ------------------------------------------------------------------
@@ -76,6 +88,12 @@ function _echo_style_preload($fileName) {
   $dir = get_template_directory_uri();
   $href = "$dir/css/$fileName";
   echo "<link rel=\"preload\" href=\"$href\" as=\"style\">";
+}
+
+function _echo_image_preload($fileName) {
+  $dir = get_template_directory_uri();
+  $href = "$dir/img/$fileName";
+  echo "<link rel=\"preload\" href=\"$href\" as=\"image\">";
 }
 
 ?>
