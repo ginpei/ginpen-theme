@@ -33,7 +33,7 @@
   <div class="article-body">
     <div class="u-container">
       <div class="articleContent">
-          <?php the_content(); ?>
+        <?php the_content(); ?>
       </div>
       <?php if ( is_single() ) wp_link_pages('before=<nav class="pagination">ページ: &after=</nav>&pagelink=<span class="page">%</span>'); ?>
     </div>
