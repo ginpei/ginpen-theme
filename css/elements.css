@@ -58,7 +58,6 @@ blockquote {
 pre {
   background-color: #333;
   color: #fff;
-  font-size: var(--font-small);
 }
   pre code {
     background-color: transparent;
