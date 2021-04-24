@@ -1,5 +1,6 @@
 .navbar {
   background-color: var(--theme-bg);
+  border-bottom: 1px solid var(--basic-bg);
   color: var(--theme-fg);
   font-size: var(--font-small-x);
   height: var(--font-small-x);
