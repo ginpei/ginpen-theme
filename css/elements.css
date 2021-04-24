@@ -78,3 +78,6 @@ code {
   color: var(--code-fg);
   padding: 0 0.5em;
 }
+  :link:hover code {
+    color: var(--link-hover-fg);
+  }
