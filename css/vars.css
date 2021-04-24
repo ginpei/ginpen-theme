@@ -9,6 +9,8 @@
   --code-fg: #4f4f4f;
   --link-fg: #059;
   --link-hover-fg: #a00;
+  --table-header-bg: #f0f0f0;
+  --table-border-color: #ccc;
   --theme-bg: #036;
   --theme-fg: #fff;
 }

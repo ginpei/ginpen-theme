@@ -20,8 +20,22 @@ h3,
 ol,
 p,
 pre,
+table,
 ul {
   margin-top: 1em;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+:where(th, td) {
+  border: 1px solid var(--table-border-color);
+  padding: 0.5rem 1rem;
+}
+
+th {
+  background-color: var(--table-header-bg);
 }
 
 :where(ol, ul) {
