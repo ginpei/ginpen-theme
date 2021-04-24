@@ -35,7 +35,10 @@
       <main class="articleContent">
         <?php the_content(); ?>
       </main>
-      <?php if ( is_single() ) wp_link_pages('before=<nav class="pagination">ページ: &after=</nav>&pagelink=<span class="page">%</span>'); ?>
+      <?php wp_link_pages(); ?>
+      <?php if ( is_single() ) : ?>
+        <?php wp_link_pages('before=<nav class="pagination">ページ: &after=</nav>&pagelink=<span class="page">%</span>'); ?>
+      <?php endif; ?>
     </div>
   </div>
   <footer>
