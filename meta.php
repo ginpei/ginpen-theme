@@ -41,8 +41,8 @@ _echo_image_preload("Twitter_Logo_Blue.svg");
 _echo_image_preload("GitHub-Mark-64px.png");
 
 // article
-_echo_image_preload("fukidashi-border.gif");
-_echo_image_preload("fukidashi-char.gif");
+_echo_image_preload("fukidashi-border.png");
+_echo_image_preload("fukidashi-character.png");
 _echo_image_preload("icon-512.png");
 ?>
 
