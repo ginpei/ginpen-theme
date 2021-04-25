@@ -95,5 +95,3 @@ function _echo_image_preload($fileName) {
   $href = "$dir/img/$fileName";
   echo "<link rel=\"preload\" href=\"$href\" as=\"image\">";
 }
-
-?>
