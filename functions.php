@@ -1,6 +1,13 @@
 <?php
 define('FORCE_SSL_ADMIN', true);
 
+// avoid accidental emoticon images :P
+// (Note that this updates database.)
+// https://developer.wordpress.org/reference/functions/convert_smilies/
+if (get_option( 'use_smilies' )) {
+  update_option( 'use_smilies', 0 );
+}
+
 /*
  * Remove some unnecessary elements from document header.
  */
@@ -16,6 +23,15 @@ function remove_unused_wp_resources() {
 
   // from WP Gutenberg
   wp_dequeue_style( 'wp-block-library' );
+
+  // emoji
+  remove_filter( 'wp_head', 'print_emoji_detection_script', 7 );
+  remove_filter( 'admin_print_scripts', 'print_emoji_detection_script' );
+  remove_filter( 'wp_print_styles', 'print_emoji_styles' );
+  remove_filter( 'admin_print_styles', 'print_emoji_styles' );
+  remove_filter( 'the_content_feed', 'wp_staticize_emoji' );
+  remove_filter( 'comment_text_rss', 'wp_staticize_emoji' );
+  remove_filter( 'wp_mail', 'wp_staticize_emoji_for_email' );
 }
 add_action( 'wp_enqueue_scripts', 'remove_unused_wp_resources' );
 
