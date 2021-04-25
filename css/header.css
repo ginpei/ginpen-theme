@@ -45,6 +45,7 @@ a.header-siteNameLink {
 
 a.header-infoItem {
   display: inline-grid;
+  gap: 0.1em;
   grid-template-columns: 20px auto;
 }
 
