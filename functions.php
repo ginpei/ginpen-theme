@@ -9,17 +9,13 @@ if (get_option( 'use_smilies' )) {
 }
 
 /*
- * Remove some unnecessary elements from document header.
- */
-remove_action( 'wp_head', 'rsd_link' );
-remove_action( 'wp_head', 'wlwmanifest_link' );
-remove_action( 'wp_head', 'wp_generator' );
-
-/*
  * Remove unused resources for performance
  */
 function remove_unused_wp_resources() {
   wp_deregister_script( 'wp-embed' );
+  remove_action( 'wp_head', 'rsd_link' );
+  remove_action( 'wp_head', 'wlwmanifest_link' );
+  remove_action( 'wp_head', 'wp_generator' );
 
   // from WP Gutenberg
   wp_dequeue_style( 'wp-block-library' );
