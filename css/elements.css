@@ -8,6 +8,7 @@ body {
   color: var(--basic-fg);
   margin: 0;
   font-family: "游ゴシック", sans-serif;
+  overflow-wrap: break-word;
 }
 
 article,
