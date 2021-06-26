@@ -6,8 +6,8 @@
 body {
   background-color: var(--basic-bg);
   color: var(--basic-fg);
-  margin: 0;
   font-family: "游ゴシック", sans-serif;
+  margin: 0;
   overflow-wrap: break-word;
 }
 
