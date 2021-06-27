@@ -9,6 +9,7 @@ body {
   font-family: "游ゴシック", sans-serif;
   margin: 0;
   overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 article,
