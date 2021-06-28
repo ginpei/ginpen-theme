@@ -1,43 +1,49 @@
-<article>
+<article class="article">
   <header>
-    <h1><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
-    <div class="article-status well">
-      <div class="post-datetime">投稿日時: <a href="<?php the_permalink() ?>"><time datetime="<?php the_time('c'); ?>"><?php the_time('Y/m/d H:i'); ?></time></a></div>
-      <?php if ( get_post_type() == 'post') : ?>
-        <div class="post-categories">
-          カテゴリー:
-          <?php the_category(', '); ?>
-        </div>
-        <div class="post-tags">
-          <?php the_tags(); ?>
-        </div>
+    <div class="u-container">
+      <h1 class="article-title">
+        <a class="article-titleLink" href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+      </h1>
+      <?php if ( is_single() ) : ?>
+        <?php get_template_part( 'components/addThis' ); ?>
       <?php endif; ?>
-      <?php edit_post_link(); ?>
-    </div>
-    <div class="addthis">
-      <?php get_template_part( 'components/addthis' ); ?>
+      <div class="u-infoBox">
+        <div class="article-status">
+          <span class="article-statusItem">
+            投稿日時: <a href="<?php the_permalink() ?>"><time datetime="<?php the_time('c'); ?>"><?php the_time('Y/m/d H:i'); ?></time></a>
+          </span>
+          <?php if ( get_post_type() == 'post') : ?>
+            <span class="article-statusItem">
+              カテゴリー:
+              <?php the_category(', '); ?>
+            </span>
+            <span class="article-statusItem">
+              <?php the_tags(); ?>
+            </span>
+          <?php endif; ?>
+          <?php if (is_user_logged_in()) : ?>
+            <span class="article-statusItem">
+              <?php edit_post_link(); ?>
+            </span>
+          <?php endif; ?>
+        </div>
+      </div>
     </div>
   </header>
-  <?php if (!is_ssl()) { ?>
-    <p class="notice-sslLink">
-      ※この記事にはHTTPS版のURLがあります。よろしければそちらをご利用ください。
-      <br />
-      <a href="<?php the_permalink(); ?>"><?php the_permalink(); ?></a>
-    </p>
-  <?php } ?>
   <div class="article-body">
-    <?php the_content(); ?>
-    <?php if ( is_single() ) wp_link_pages('before=<nav class="pagination">ページ: &after=</nav>&pagelink=<span class="page">%</span>'); ?>
+    <div class="u-container">
+      <main class="articleContent">
+        <?php the_content(); ?>
+      </main>
+      <?php wp_link_pages(); ?>
+      <?php if ( is_single() ) : ?>
+        <?php wp_link_pages('before=<nav class="pagination">ページ: &after=</nav>&pagelink=<span class="page">%</span>'); ?>
+      <?php endif; ?>
+    </div>
   </div>
   <footer>
     <?php if ( is_single() ) : ?>
-      <div class="addthis">
-        <?php get_template_part( 'components/addthis' ); ?>
-      </div>
-      <nav class="post-neighbers nav">
-        <?php next_post_link('<span class="next well">%link</span>', '&larr; %title'); ?>
-        <?php previous_post_link('<span class="prev well">%link</span>', '%title &rarr;'); ?>
-      </nav>
+      <?php get_template_part( 'components/addThis' ); ?>
     <?php endif; ?>
   </footer>
 </article>
