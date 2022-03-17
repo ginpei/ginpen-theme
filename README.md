@@ -33,6 +33,8 @@ Docker の起動は外側 `ginpen-theme-workspace` で、テーマ開発は内�
 $ docker-compose up
 ```
 
+- http://localhost:8000/
+
 ### 初期状態へ戻す
 
 ```console
