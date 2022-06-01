@@ -1,0 +1,16 @@
+.u-container {
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: min(800px, 100%);
+}
+
+.u-infoBox {
+  background-color: var(--box-bg);
+  border-radius: var(--radius);
+  border: 1px solid var(--box-border-color);
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+}

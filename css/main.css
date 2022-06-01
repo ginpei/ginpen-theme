@@ -1,0 +1,17 @@
+@import "./vars.css";
+@import "./elements.css";
+@import "./utils.css";
+
+@import "./navbar.css";
+@import "./header.css";
+@import "./footer.css";
+
+@import "./list.css";
+
+@import "./article.css";
+@import "./articleContent.css";
+
+@import "./functions/shortcode_translate_src.css";
+@import "./functions/shortcode_translate_dest.css";
+
+@import "./external/addThis.css";

@@ -1,23 +1,53 @@
+
 <?php do_action( 'get_header' ); ?>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width">
 <title><?php _meta_echo_title(); ?></title>
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/vendor/google-fonts/Slackey.css" />
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" />
-<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>?0401" />
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
-<?php if ( is_single() ) : ?>
-  <link rel="alternate" media="handheld" href="<?php the_permalink(); ?>">
-<?php endif; ?>
-<!--[if lt IE 9]>
-<script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
-<![endif]-->
-<?php wp_deregister_script('jquery'); ?>
-<?php wp_enqueue_script('jquery', get_template_directory_uri() . '/vendor/jquery/jquery-3.5.1.slim.min.js'); ?>
-<?php if ( is_singular() && get_option( 'thread_comments' ) ) : ?>
-  <?php wp_enqueue_script( 'comment-reply' ); ?>
-<?php endif; ?>
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/icon-512.png" />
+
+<script src="<?php echo get_template_directory_uri(); ?>/js/main.js" type="module"></script>
+<?php
+_echo_js_module_preload("addThis.js");
+_echo_js_module_preload("floating-header.js");
+?>
+
+<link rel="stylesheet" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
+<?php
+_echo_style_preload("main.css");
+
+_echo_style_preload("vars.css");
+_echo_style_preload("elements.css");
+_echo_style_preload("utils.css");
+
+_echo_style_preload("navbar.css");
+_echo_style_preload("header.css");
+_echo_style_preload("footer.css");
+
+_echo_style_preload("list.css");
+
+_echo_style_preload("article.css");
+_echo_style_preload("articleContent.css");
+
+_echo_style_preload("functions/shortcode_translate_src.css");
+_echo_style_preload("functions/shortcode_translate_dest.css");
+
+_echo_style_preload("external/addThis.css");
+?>
+
+<?php
+// header
+_echo_image_preload("icon-32.png");
+_echo_image_preload("Twitter_Logo_Blue.svg");
+_echo_image_preload("GitHub-Mark-64px.png");
+
+// article
+_echo_image_preload("fukidashi-border.png");
+_echo_image_preload("fukidashi-character.png");
+_echo_image_preload("icon-512.png");
+?>
+
 <?php wp_head(); ?>
+
 <?php // ------------------------------------------------------------------
 /**
  * Write site title.
@@ -44,4 +74,24 @@ function _meta_echo_title() {
 		echo $separator . ' Page ' . max( $paged, $page );
   }
 }
-?>
+
+// Note: preloading actually does not look effective really
+// because file nestings are not deep now
+// but OK since it looks cool
+function _echo_js_module_preload($fileName) {
+  $dir = get_template_directory_uri();
+  $href = "$dir/js/$fileName";
+  echo "<link rel=\"modulepreload\" href=\"$href\">";
+}
+
+function _echo_style_preload($fileName) {
+  $dir = get_template_directory_uri();
+  $href = "$dir/css/$fileName";
+  echo "<link rel=\"preload\" href=\"$href\" as=\"style\">";
+}
+
+function _echo_image_preload($fileName) {
+  $dir = get_template_directory_uri();
+  $href = "$dir/img/$fileName";
+  echo "<link rel=\"preload\" href=\"$href\" as=\"image\">";
+}

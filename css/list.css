@@ -1,0 +1,35 @@
+ul.list-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+li.list-item {
+  margin-top: 2em;
+}
+
+a.list-link {
+  text-decoration: none;
+}
+
+.list-postTime {
+  color: var(--box-fg);
+  display: block;
+  font-size: var(--font-small);
+}
+
+.list-postTitle {
+  text-decoration: underline;
+}
+
+.list-pages {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+  .list-pages a {
+    display: block;
+  }
+
+.list-nextPage {
+  text-align: right;
+}

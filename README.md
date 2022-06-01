@@ -2,6 +2,19 @@
 
 https://ginpen.com 用の WordPress テーマ。
 
+## プラグイン
+
+動作に必要：
+
+- [Markdown for WordPress and bbPress – WordPress プラグイン | WordPress.org 日本語](https://ja.wordpress.org/plugins/markdown-for-wordpress-and-bbpress/)
+- [SyntaxHighlighter Evolved – WordPress プラグイン | WordPress.org 日本語](https://ja.wordpress.org/plugins/syntaxhighlighter/)
+
+利用中：
+
+- [Autoptimize – WordPress プラグイン | WordPress.org 日本語](https://ja.wordpress.org/plugins/autoptimize/)
+- [JM Twitter Cards – WordPress プラグイン | WordPress.org 日本語](https://ja.wordpress.org/plugins/jm-twitter-cards/)
+- [SiteGuard WP Plugin – WordPress プラグイン | WordPress.org 日本語](https://ja.wordpress.org/plugins/siteguard/)
+
 ## 開発
 
 ### 準備
@@ -19,6 +32,8 @@ Docker の起動は外側 `ginpen-theme-workspace` で、テーマ開発は内�
 ```console
 $ docker-compose up
 ```
+
+- http://localhost:8000/
 
 ### 初期状態へ戻す
 

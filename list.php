@@ -1,0 +1,42 @@
+<main class="list">
+  <div class="u-container">
+    <?php _body_echo_type_title(); ?>
+    <ul class="list-list">
+      <?php while ( have_posts() ) : the_post(); ?>
+        <li class="list-item">
+          <a class="list-link" href="<?php the_permalink() ?>">
+            <time class="list-postTime" datetime="<?php the_time('c'); ?>">
+              <?php the_time('Y/m/d H:i'); ?>
+            </time>
+            <span class="list-postTitle"><?php the_title() ?></span>
+          </a>
+        </li>
+      <?php endwhile; ?>
+    </ul>
+    <div class="list-pages">
+      <div class="list-prevPage"><?php previous_posts_link('<div class="u-infoBox">&larr; 前</div>'); ?></div>
+      <div class="list-nextPage"><?php next_posts_link('<div class="u-infoBox">次 &rarr;</div>'); ?></div>
+    </div>
+  </div>
+</main>
+
+<?php // ------------------------------------------------------------------
+/**
+ * Write heading for search result, category archive or tag archive.
+ */
+function _body_echo_type_title() {
+  if ( is_search() ) {
+    $title = '検索結果：' . get_search_query();
+  }
+  elseif ( is_category() ) {
+    $title = 'カテゴリー：' . single_term_title('', false);
+  }
+  elseif ( is_tag() ) {
+    $title = 'タグ：' . single_term_title('', false);
+  }
+
+  if ( $title ) {
+    echo "<h1 class=\"well\">$title</h1>";
+  }
+}
+?>

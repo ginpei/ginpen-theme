@@ -1,0 +1,37 @@
+/* colors */
+:root {
+  --basic-bg: #fff;
+  --basic-fg: #333;
+  --box-bg: #fcfcfc;
+  --box-border-color: #eee;
+  --box-fg: #555;
+  --code-bg: #0001;
+  --code-fg: #4f4f4f;
+  --link-fg: #059;
+  --link-hover-fg: #a00;
+  --table-header-bg: #f0f0f0;
+  --table-border-color: #ccc;
+  --theme-bg: #036;
+  --theme-fg: #fff;
+}
+
+/* sizes */
+:root {
+  --clickable-height: 1rem;
+  --font-base: 16px;
+  --font-small-x: 0.6rem;
+  --font-small: 0.7rem;
+  --font-large: 1.5rem;
+  --radius: 0.3rem;
+  font-size: var(--font-base);
+}
+  @media (pointer:coarse) {
+    :root {
+      --clickable-height: 27px;
+    }
+  }
+
+:root {
+  --transition-duration: 200ms;
+  --code-font: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+}
