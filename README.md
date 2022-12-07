@@ -21,8 +21,8 @@ https://ginpen.com 用の WordPress テーマ。
 
 Docker のボリュームとして Git リポジトリーを載せるため、ディレクトリーは二重にする。（ `.` をボリュームに指定できない。プラグインのインストールに失敗するなど。）
 
-1. `mkdir ginpen-theme-workspace` & `cd`
-2. `git clone ...`
+1. `mkdir ginpen-theme && cd $_`
+2. `git clone git@github.com:ginpei/ginpen-theme.git`
 3. `ln ginpen-theme/.docker/docker-compose.yml .`
 
 Docker の起動は外側 `ginpen-theme-workspace` で、テーマ開発は内側 `ginpen-theme-workspace/ginpen-theme` で行う。
