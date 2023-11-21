@@ -47,7 +47,7 @@
   .articleContent figure a {
     display: block;
   }
-  .articleContent figure img {
+  .articleContent figure :is(img, video, iframe) {
     height: auto;
     max-height: 50vh;
     max-width: 100%;
